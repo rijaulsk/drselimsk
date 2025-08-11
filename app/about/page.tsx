@@ -177,7 +177,7 @@ const AboutPage = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-cyan-400 to-teal-400 rounded-2xl blur-xl opacity-30"></div>
               <div className="relative bg-white p-6 rounded-2xl shadow-2xl">
                 <Image
-                  src="/images/dr-selim-profile.jpg"
+                  src="/images/dr-selim-profile.webp"
                   alt="Dr. Selim SK - Professional Veterinary Doctor"
                   width={400}
                   height={320}

@@ -183,7 +183,7 @@ const ParnasreePalliPage = () => {
               <div className="relative bg-white p-6 rounded-2xl shadow-2xl">
 
                 <Image
-                  src="/images/hero-veterinary.jpg"
+                  src="/images/hero-veterinary.webp"
                   alt="Parnasree Veterinary Clinic"
                   width={400}
                   height={320}

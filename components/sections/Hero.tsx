@@ -144,7 +144,7 @@ const Hero = () => {
               <div className="relative bg-white p-8 rounded-2xl shadow-2xl">
 
                 <Image
-                  src="/images/hero-veterinary.jpg"
+                  src="/images/hero-veterinary.webp"
                   alt="Dr. Selim SK with pets in veterinary clinic"
                   width={500}
                   height={384}

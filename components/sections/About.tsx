@@ -14,7 +14,7 @@ const About = () => {
           setIsVisible(true);
         }
       },
-      { threshold: 0.15 }
+      { threshold: 0.1 }
     );
 
     if (sectionRef.current) {

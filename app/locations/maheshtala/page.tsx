@@ -156,7 +156,7 @@ const BudgeBudgePage = () => {
               <div className="absolute -inset-4 bg-gradient-to-r from-green-400 to-teal-400 rounded-2xl blur-xl opacity-30"></div>
               <div className="relative bg-white p-6 rounded-2xl shadow-2xl">
                 <Image
-                  src="/images/hero-veterinary.jpg"
+                  src="/images/hero-veterinary.webp"
                   alt="Maheshtala Veterinary Clinic"
                   width={400}
                   height={320}
