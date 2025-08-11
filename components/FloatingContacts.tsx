@@ -7,11 +7,11 @@ const FloatingContacts = () => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
-    <div className="fixed bottom-6 -right-12 z-50">
+    <div className="fixed bottom-6 right-6 z-50">
       {/* Main Floating Button */}
-      <div className="relative">
+      <div className="relative flex flex-col items-end">
         {/* WhatsApp Button */}
-        <div className={`transition-all duration-300 ${isExpanded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'} mb-4`}>
+        <div className={`transition-all duration-300 ${isExpanded ? 'translate-y-0 opacity-100' : 'translate-x-8 opacity-0 pointer-events-none'} mb-3`}>
           <a
             href="https://wa.me/916291630297?text=Hello%20Dr.%20Selim,%20I%20need%20veterinary%20consultation"
             target="_blank"
@@ -24,7 +24,7 @@ const FloatingContacts = () => {
         </div>
 
         {/* Call Button */}
-        <div className={`transition-all duration-300 ${isExpanded ? 'translate-y-0 opacity-100' : 'translate-y-4 opacity-0'} mb-4`}>
+        <div className={`transition-all duration-300 ${isExpanded ? 'translate-y-0 opacity-100' : 'translate-x-8 opacity-0 pointer-events-none'} mb-3`}>
           <a
             href="tel:+916291630297"
             className="flex items-center space-x-3 bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
