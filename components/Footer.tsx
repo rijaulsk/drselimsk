@@ -123,7 +123,7 @@ const Footer = () => {
         <div className="border-t border-slate-800 pt-8 mt-12">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="text-slate-400 text-sm">
-              Copyright © {currentYear} Dr. Selim SK Veterinary Services | Powered by{' '}
+              Copyright © {currentYear} Dr. Selim SK | Powered by{' '}
                 <a
                   href="https://debugswift.com"
                   target="_blank"
