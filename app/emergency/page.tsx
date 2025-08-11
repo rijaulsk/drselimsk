@@ -320,7 +320,7 @@ const EmergencyPage = () => {
               href="https://wa.me/916291630297?text=EMERGENCY:%20I%20need%20immediate%20veterinary%20help"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
+              className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
             >
               Emergency WhatsApp
             </a>

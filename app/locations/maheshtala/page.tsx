@@ -28,7 +28,7 @@ const BudgeBudgePage = () => {
     name: "Maheshtala Clinic",
     address: "MORE, Nangi, Budge Budge, Maheshtala, West Bengal 700140",
     mapUrl:
-      "https://maps.google.com/?q=MORE,+Nangi,+Budge+Budge,+Maheshtala,+West+Bengal+700140",
+      "https://maps.app.goo.gl/Y4G6CeGeBuj2Ff8D9",
     area: "South Kolkata",
     pincode: "700140",
   };

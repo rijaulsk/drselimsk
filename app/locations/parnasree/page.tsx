@@ -31,7 +31,7 @@ const ParnasreePalliPage = () => {
     address:
       "58, Kalimata Colony Rd, Parnasree Palli, Kolkata, West Bengal 700060",
     mapUrl:
-      "https://maps.google.com/?q=58,+Kalimata+Colony+Rd,+Parnasree+Palli,+Kolkata,+West+Bengal+700060",
+      "https://maps.app.goo.gl/RFjVhRT4btQzLtwK7",
     area: "South Kolkata",
     pincode: "700060",
   };
