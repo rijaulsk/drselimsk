@@ -48,7 +48,7 @@ const FloatingContacts = () => {
 
         {/* Emergency Pulse Ring */}
         {!isExpanded && (
-          <div className="absolute inset-0 w-14 h-14 bg-red-400 rounded-full animate-ping opacity-20"></div>
+          <div className="absolute inset-0 w-14 h-14 bg-red-400 rounded-full animate-ping opacity-[.05]"></div>
         )}
       </div>
     </div>
