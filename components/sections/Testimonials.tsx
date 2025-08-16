@@ -112,9 +112,9 @@ const Testimonials = () => {
                     <div className="flex items-center mb-2">
                       {renderStars(testimonials[currentTestimonial].rating)}
                     </div>
-                    <h4 className="text-lg font-bold text-white">
+                    <div className="text-lg font-bold text-white">
                       {testimonials[currentTestimonial].name}
-                    </h4>
+                    </div>
                     <p className="text-slate-400">
                       {testimonials[currentTestimonial].location}
                     </p>
@@ -128,6 +128,7 @@ const Testimonials = () => {
                   <button
                     key={index}
                     onClick={() => setCurrentTestimonial(index)}
+                    aria-label={`Go to testimonial ${index + 1}`}
                     className={`w-3 h-3 rounded-full transition-all duration-200 ${
                       index === currentTestimonial
                         ? "bg-cyan-400 scale-125"
@@ -159,9 +160,9 @@ const Testimonials = () => {
                   &quot;{testimonial.text.substring(0, 100)}...&quot;
                 </p>
                 <div>
-                  <h4 className="font-semibold text-white">
+                  <div className="font-semibold text-white">
                     {testimonial.name}
-                  </h4>
+                  </div>
                   <p className="text-slate-400 text-sm">
                     {testimonial.location}
                   </p>

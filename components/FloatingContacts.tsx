@@ -37,6 +37,7 @@ const FloatingContacts = () => {
         {/* Toggle Button */}
         <button
           onClick={() => setIsExpanded(!isExpanded)}
+          aria-label={isExpanded ? "Close contact menu" : "Open contact menu"}
           className={`w-14 h-14 ${isExpanded ? 'bg-slate-600' : 'bg-cyan-600'} hover:bg-opacity-90 text-white rounded-full shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105 flex items-center justify-center`}
         >
           {isExpanded ? (

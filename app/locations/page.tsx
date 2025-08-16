@@ -33,7 +33,7 @@ const LocationsPage = () => {
       specialties: ["Emergency Care", "Surgical Procedures", "Vaccination Programs"]
     },
     {
-      name: "Maheshtala Center",
+      name: "Maheshtala Clinic",
       address: "MORE, Nangi, Budge Budge, Maheshtala, West Bengal 700140",
       shortAddress: "Budge Budge, West Bengal 700140",
       time: "Daily 10:00 AM - 10:00 PM",
@@ -45,7 +45,7 @@ const LocationsPage = () => {
       specialties: ["Home Visits", "Large Animal Care", "Community Service"]
     },
     {
-      name: "Parnasree Location",
+      name: "Parnasree Clinic",
       address: "58, Kalimata Colony Rd, Parnasree Palli, Kolkata, West Bengal 700060",
       shortAddress: "Parnasree Palli, Kolkata 700060",
       time: "Daily 10:00 AM - 10:00 PM",
