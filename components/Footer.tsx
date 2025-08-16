@@ -128,7 +128,7 @@ const Footer = () => {
                   href="https://debugswift.com"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-teal-400 hover:text-teal-300 transition-colors inline-flex items-center gap-1"
+                  className="text-teal-400 hover:text-teal-300 font-medium transition-colors inline-flex items-center gap-1"
                 >
                   Debugswift
                   <ExternalLink className="h-3 w-3" />
@@ -137,7 +137,7 @@ const Footer = () => {
             <div className="flex items-center space-x-6 mt-4 md:mt-0">
               <a
                 href="tel:+916291630297"
-                className="bg-orange-600 hover:bg-orange-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center space-x-2"
+                className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200 flex items-center space-x-2"
               >
                 <Phone className="h-4 w-4" />
                 <span>Emergency Call</span>
@@ -146,7 +146,7 @@ const Footer = () => {
                 href="https://wa.me/916291630297"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
+                className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-4 py-2 rounded-lg text-sm font-medium transition-colors duration-200"
               >
                 WhatsApp
               </a>
