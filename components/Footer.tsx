@@ -5,7 +5,7 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-slate-900 text-white">
+    <footer className="bg-slate-950 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand Section */}
@@ -16,13 +16,13 @@ const Footer = () => {
               </div>
               <div>
                 <div className="text-xl font-bold">Dr. Selim SK</div>
-                <div className="text-sm text-slate-300">Veterinary Doctor & Surgeon</div>
+                <div className="text-sm text-slate-400">Veterinary Doctor & Surgeon</div>
               </div>
             </div>
-            <p className="text-slate-300 mb-6">
+            <p className="text-slate-400 mb-6">
               Providing compassionate veterinary care across Kolkata with 24/7 emergency services and expert treatment.
             </p>
-            <div className="flex items-center space-x-2 text-slate-300">
+            <div className="flex items-center space-x-2 text-slate-400">
               <Clock className="h-4 w-4" />
               <span className="text-sm">Emergency services available 24/7</span>
             </div>
@@ -33,27 +33,27 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/about" className="text-slate-300 hover:text-white transition-colors duration-200">
+                <Link href="/about" className="text-slate-400 hover:text-white transition-colors duration-200">
                   About Dr. Selim
                 </Link>
               </li>
               <li>
-                <Link href="/services" className="text-slate-300 hover:text-white transition-colors duration-200">
+                <Link href="/services" className="text-slate-400 hover:text-white transition-colors duration-200">
                   Services
                 </Link>
               </li>
               <li>
-                <Link href="/locations" className="text-slate-300 hover:text-white transition-colors duration-200">
+                <Link href="/locations" className="text-slate-400 hover:text-white transition-colors duration-200">
                   Locations
                 </Link>
               </li>
               <li>
-                <Link href="/emergency" className="text-slate-300 hover:text-white transition-colors duration-200">
+                <Link href="/emergency" className="text-slate-400 hover:text-white transition-colors duration-200">
                   Emergency Care
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="text-slate-300 hover:text-white transition-colors duration-200">
+                <Link href="/faq" className="text-slate-400 hover:text-white transition-colors duration-200">
                   FAQ
                 </Link>
               </li>
@@ -64,12 +64,12 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Services</h3>
             <ul className="space-y-3">
-              <li className="text-slate-300">Health Checkups</li>
-              <li className="text-slate-300">Vaccinations</li>
-              <li className="text-slate-300">Surgery</li>
-              <li className="text-slate-300">Emergency Care</li>
-              <li className="text-slate-300">Home Visits</li>
-              <li className="text-slate-300">Diagnostic Services</li>
+              <li className="text-slate-400">Health Checkups</li>
+              <li className="text-slate-400">Vaccinations</li>
+              <li className="text-slate-400">Surgery</li>
+              <li className="text-slate-400">Emergency Care</li>
+              <li className="text-slate-400">Home Visits</li>
+              <li className="text-slate-400">Diagnostic Services</li>
             </ul>
           </div>
 
@@ -87,7 +87,7 @@ const Footer = () => {
                   >
                     +91 6291630297
                   </a>
-                  <div className="text-sm text-slate-300">Available 24/7</div>
+                  <div className="text-sm text-slate-400">Available 24/7</div>
                 </div>
               </div>
 
@@ -108,7 +108,7 @@ const Footer = () => {
                 <MapPin className="h-5 w-5 text-orange-400 mt-0.5" />
                 <div>
                   <div className="font-semibold text-white">Locations</div>
-                  <div className="text-slate-300 text-sm">
+                  <div className="text-slate-400 text-sm">
                     <div>Baranagar</div>
                     <div>Budge Budge</div>
                     <div>Parnasree Palli</div>
@@ -122,7 +122,7 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-slate-800 pt-8 mt-12">
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="text-slate-300 text-sm">
+            <div className="text-slate-400 text-sm">
               Copyright © {currentYear} Dr. Selim SK | Powered by{' '}
                 <a
                   href="https://debugswift.com"
