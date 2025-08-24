@@ -13,8 +13,8 @@ import {
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Clinic Locations - Dr. Selim SK | Veterinary Services Across Kolkata',
-  description: 'Visit Dr. Selim SK at our 3 convenient locations: Baranagar, Budge Budge, and Parnasree Palli. Professional veterinary care with easy access across Kolkata.',
+  title: 'Veterinary Clinics in Kolkata | 3 Locations | Dr. Selim SK',
+  description: 'Dr. Selim SK provides expert veterinary care across Kolkata with clinics in Baranagar (North), Parnasree & Maheshtala (South). Open daily. Call for appointments.',
   keywords: 'veterinary clinic locations Kolkata, pet doctor Baranagar, vet clinic Budge Budge, animal hospital Parnasree Palli, veterinary services near me',
 };
 
@@ -88,10 +88,10 @@ const LocationsPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-              Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600">Clinic Locations</span>
+              Your Trusted Local Vet: <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600">Serving North & South Kolkata</span>
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Convenient access to professional veterinary care across Kolkata with three strategically located clinics
+              Finding expert and compassionate veterinary care in Kolkata has never been easier. With three strategically located clinics in Baranagar, Maheshtala, and Parnasree, Dr. Selim SK ensures your beloved pet is always close to professional help.
             </p>
           </div>
 

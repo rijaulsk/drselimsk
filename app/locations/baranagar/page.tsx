@@ -15,9 +15,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Baranagar Clinic - Dr. Selim SK | Veterinary Services North Kolkata",
+  title: "Vet in Baranagar | 24/7 Emergency Pet Clinic | Dr. Selim SK",
   description:
-    "Visit Dr. Selim SK at Baranagar clinic on Gopal Lal Tagore Road. Professional veterinary care in North Kolkata with emergency services and home visits.",
+    "Need a trusted vet in Baranagar? Dr. Selim SK's North Kolkata clinic on Gopal Lal Tagore Rd offers checkups, vaccinations & 24/7 emergency services. Call now.",
   keywords:
     "veterinary clinic Baranagar, pet doctor North Kolkata, animal hospital Gopal Lal Tagore Road, vet near Baranagar station",
 };
@@ -36,22 +36,22 @@ const BaranagarPage = () => {
     {
       icon: Stethoscope,
       title: "Complete Health Checkups",
-      description: "Comprehensive examinations for all pets",
+      description: "Our comprehensive examinations for dogs, cats, and other pets help detect issues early, ensuring your companion stays healthy and happy. Ideal for residents of Baranagar and the surrounding North Kolkata area.",
     },
     {
       icon: CheckCircle,
       title: "Vaccination Programs",
-      description: "Full immunization schedules",
+      description: "We provide complete immunization schedules tailored to your pet's age and lifestyle, protecting them from common diseases. Keep your pet safe with our vaccination programs.",
     },
     {
       icon: Phone,
       title: "Emergency Care",
-      description: "24/7 emergency services available",
+      description: "Pet emergencies can happen anytime. Our Baranagar clinic offers 24/7 emergency veterinary services, providing critical care when you need it most. We are the go-to emergency vet for North Kolkata.",
     },
     {
       icon: Home,
       title: "Home Visits",
-      description: "Convenient care at your location",
+      description: "For your convenience and your pet's comfort, we offer home visits in Baranagar, Dum Dum, and nearby areas. Get expert veterinary care delivered to your doorstep.",
     },
   ];
 
@@ -91,13 +91,12 @@ const BaranagarPage = () => {
                 <span>North Kolkata Location</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
-                  Baranagar Clinic
+                Your Trusted <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+                  Veterinary Clinic in Baranagar
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Professional veterinary care in the heart of North Kolkata,
-                conveniently located on Gopal Lal Tagore Road
+                Providing professional and compassionate veterinary care from the heart of North Kolkata. Our Baranagar clinic, conveniently located on Gopal Lal Tagore Road, is fully equipped to handle everything from routine checkups to emergencies.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -263,6 +262,44 @@ const BaranagarPage = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+          
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                Where is your Baranagar clinic located?
+              </h3>
+              <p className="text-slate-600">
+                Our clinic is on Gopal Lal Tagore Road in Ashokgarh, easily accessible from Barrackpore Trunk Road and Dum Dum. We are a key animal hospital serving North Kolkata.
+              </p>
+            </div>
+            
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                Do you provide emergency services at this location?
+              </h3>
+              <p className="text-slate-600">
+                Yes, we offer 24/7 emergency services at our Baranagar clinic. If your pet needs urgent care in North Kolkata, please call us immediately.
+              </p>
+            </div>
+            
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                Is there parking available?
+              </h3>
+              <p className="text-slate-600">
+                Yes, convenient parking is available for both cars and two-wheelers near the clinic.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-20 bg-gradient-to-r from-blue-600 to-cyan-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -300,6 +337,40 @@ const BaranagarPage = () => {
           </div>
         </div>
       </section>
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VeterinaryCare",
+            "name": "Dr. Selim SK - Baranagar Veterinary Clinic",
+            "description": "Professional veterinary care in Baranagar, North Kolkata with 24/7 emergency services",
+            "url": "https://drselimsk.com/locations/baranagar",
+            "telephone": "+916291630297",
+            "email": "mstgunahar@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "J9RF+MQ5, Gopal Lal Tagore Rd, Neogipara, Joyshree, Ashokgarh",
+              "addressLocality": "Baranagar",
+              "addressRegion": "West Bengal",
+              "postalCode": "700035",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "22.6416",
+              "longitude": "88.3742"
+            },
+            "openingHours": "Mo-Su 10:00-22:00",
+            "priceRange": "₹₹",
+            "paymentAccepted": "Cash, UPI",
+            "emergencyService": true,
+            "hasMap": "https://maps.app.goo.gl/73JM5BbWbpVeeVqH9",
+            "areaServed": ["Baranagar", "Dum Dum", "North Kolkata", "Sodepur", "Khardaha"]
+          })
+        }}
+      />
     </main>
   );
 };
