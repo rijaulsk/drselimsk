@@ -16,9 +16,9 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Maheshtala Clinic - Dr. Selim SK | Veterinary Services South Kolkata",
+  title: "Vet in Maheshtala | Large Animal Care | Dr. Selim SK",
   description:
-    "Visit Dr. Selim SK at Maheshtala center in Nangi. Professional veterinary care in South Kolkata with emergency services and community animal care.",
+    "Dr. Selim SK's clinic in Maheshtala (Nangi) serves Budge Budge and South Kolkata, specializing in home visits and large animal care. Call us for community-focused vet services.",
   keywords:
     "veterinary clinic Maheshtala, pet doctor South Kolkata, animal hospital Nangi, vet near Nangi station",
 };
@@ -37,22 +37,22 @@ const BudgeBudgePage = () => {
     {
       icon: Home,
       title: "Home Visit Services",
-      description: "Convenient care at your doorstep",
+      description: "We understand it's not always easy to bring your pet to the clinic. That's why we offer extensive home visit services throughout Maheshtala, Budge Budge, and nearby areas.",
     },
     {
       icon: Stethoscope,
       title: "Large Animal Care",
-      description: "Specialized care for farm animals",
+      description: "Dr. Selim SK has expertise in treating large animals. If you have farm animals in the South Kolkata rural belt needing care, our Maheshtala center is your trusted partner.",
     },
     {
       icon: CheckCircle,
       title: "Community Service",
-      description: "Community Treatment Programs",
+      description: "We are committed to animal welfare and proudly run community treatment programs to help stray and community animals in the Nangi and Maheshtala region.",
     },
     {
       icon: Phone,
       title: "Emergency Response",
-      description: "24/7 emergency care available",
+      description: "Our team is ready to respond to emergencies for both pets and large animals. We provide prompt and effective care to the entire Budge Budge area.",
     },
   ];
 
@@ -99,13 +99,12 @@ const BudgeBudgePage = () => {
                 <span>South Kolkata Location</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">
-                  Maheshtala Clinic
+                Community-Focused <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">
+                  Vet Clinic in Maheshtala
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Comprehensive veterinary care serving South Kolkata,
-                specializing in community service and large animal care
+                Serving the Maheshtala and Budge Budge communities, our clinic in Nangi is dedicated to providing accessible and compassionate veterinary care for all animals, including specialized services for large farm animals.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -306,6 +305,44 @@ const BudgeBudgePage = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+          
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                Do you treat farm animals like goats or cows?
+              </h3>
+              <p className="text-slate-600">
+                Yes, our Maheshtala clinic specializes in large animal care. Dr. Selim has extensive experience treating farm and rural animals.
+              </p>
+            </div>
+            
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                How do I get to your clinic?
+              </h3>
+              <p className="text-slate-600">
+                We are located in Nangi (MORE), very close to Nangi Railway Station and Budge Budge Trunk Road, making us easily accessible for the entire area.
+              </p>
+            </div>
+            
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                What do your community service programs involve?
+              </h3>
+              <p className="text-slate-600">
+                We work with local communities and animal lovers to provide occasional free or subsidized treatment, vaccination, and spaying/neutering for stray animals in the Maheshtala area.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-20 bg-gradient-to-r from-green-600 to-teal-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -342,6 +379,57 @@ const BudgeBudgePage = () => {
           </div>
         </div>
       </section>
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VeterinaryCare",
+            "name": "Dr. Selim SK - Maheshtala Veterinary Clinic",
+            "description": "Community-focused veterinary care in Maheshtala with large animal care and home visits",
+            "url": "https://drselimsk.com/locations/maheshtala",
+            "telephone": "+916291630297",
+            "email": "mstgunahar@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "MORE, Nangi, Budge Budge",
+              "addressLocality": "Maheshtala",
+              "addressRegion": "West Bengal",
+              "postalCode": "700140",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "22.4697",
+              "longitude": "88.1781"
+            },
+            "openingHours": "Mo-Su 10:00-22:00",
+            "priceRange": "₹₹",
+            "paymentAccepted": "Cash, UPI",
+            "emergencyService": true,
+            "hasMap": "https://maps.app.goo.gl/Y4G6CeGeBuj2Ff8D9",
+            "areaServed": ["Maheshtala", "Budge Budge", "Nangi", "South Kolkata", "Pujali", "Sankrail"],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Large Animal Care",
+                "value": "Specialized care for farm animals and livestock"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Community Service",
+                "value": "Free treatment programs for stray animals"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Home Visits",
+                "value": "Extensive home visit coverage in rural areas"
+              }
+            ]
+          })
+        }}
+      />
     </main>
   );
 };
