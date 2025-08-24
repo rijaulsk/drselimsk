@@ -18,9 +18,9 @@ import {
 
 export const metadata: Metadata = {
   title:
-    "Parnasree Location - Dr. Selim SK | Veterinary Services South Kolkata",
+    "Vet Clinic in Parnasree | Pet Grooming & Boarding | Dr. Selim SK",
   description:
-    "Visit Dr. Selim SK at Parnasree on Kalimata Colony Road. Professional veterinary care with diagnostic services, grooming, and boarding facilities.",
+    "Full-service vet clinic in Parnasree, South Kolkata. Dr. Selim SK offers health checkups, diagnostics, professional pet grooming, and safe boarding facilities near Behala.",
   keywords:
     "veterinary clinic Parnasree, pet doctor Behala, animal hospital Kalimata Colony Road, vet near Parnasree club",
 };
@@ -40,22 +40,22 @@ const ParnasreePalliPage = () => {
     {
       icon: Camera,
       title: "Diagnostic Services",
-      description: "Advanced pathology and radiology",
+      description: "Featuring an in-house lab for pathology and radiology, we provide fast and accurate diagnoses for your pet's health issues, serving the greater Behala and Parnasree area.",
     },
     {
       icon: Scissors,
       title: "Pet Grooming",
-      description: "Professional grooming services",
+      description: "Our professional pet grooming services will keep your pet looking and feeling their best. We offer everything from baths to stylish trims. Book a grooming session at our Parnasree clinic today!",
     },
     {
       icon: Home,
       title: "Boarding Facilities",
-      description: "Safe and caring pet accommodation",
+      description: "Going out of town? Our safe, clean, and caring pet boarding facilities in Parnasree provide a comfortable home-away-from-home for your dog or cat.",
     },
     {
       icon: Stethoscope,
       title: "Health Checkups",
-      description: "Comprehensive wellness exams",
+      description: "Regular wellness exams are key to a long, healthy life. Our comprehensive checkups help monitor your pet's health and catch any potential problems early.",
     },
   ];
 
@@ -125,13 +125,12 @@ const ParnasreePalliPage = () => {
                 <span>South Kolkata Location</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                  Parnasree Clinic
+                Full-Service <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+                  Veterinary Clinic in Parnasree
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Full-service veterinary facility in Parnasree offering
-                diagnostic services, grooming, and boarding facilities
+                Welcome to our state-of-the-art veterinary facility in Parnasree. As the leading animal hospital in this part of South Kolkata, we offer a complete suite of services, from advanced diagnostics and surgery to professional pet grooming and boarding.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -333,6 +332,44 @@ const ParnasreePalliPage = () => {
         </div>
       </section>
 
+      {/* FAQ Section */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+          
+          <div className="max-w-4xl mx-auto space-y-8">
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                What makes the Parnasree clinic different?
+              </h3>
+              <p className="text-slate-600">
+                Our Parnasree location is a full-service animal hospital with advanced facilities, including an in-house diagnostic lab, a modern surgical suite, and dedicated pet grooming and boarding areas.
+              </p>
+            </div>
+            
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                Which areas do you serve from this location?
+              </h3>
+              <p className="text-slate-600">
+                We proudly serve Parnasree, Behala, Thakurpukur, Joka, and the surrounding South Kolkata neighborhoods.
+              </p>
+            </div>
+            
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                How can I book a grooming appointment?
+              </h3>
+              <p className="text-slate-600">
+                You can book a pet grooming appointment by calling us directly at +91 6291630297. We recommend booking in advance.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -370,6 +407,57 @@ const ParnasreePalliPage = () => {
           </div>
         </div>
       </section>
+      
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "VeterinaryCare",
+            "name": "Dr. Selim SK - Parnasree Veterinary Clinic",
+            "description": "Full-service veterinary facility in Parnasree with diagnostic services, grooming, and boarding",
+            "url": "https://drselimsk.com/locations/parnasree",
+            "telephone": "+916291630297",
+            "email": "mstgunahar@gmail.com",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "58, Kalimata Colony Rd",
+              "addressLocality": "Parnasree Palli, Kolkata",
+              "addressRegion": "West Bengal",
+              "postalCode": "700060",
+              "addressCountry": "IN"
+            },
+            "geo": {
+              "@type": "GeoCoordinates",
+              "latitude": "22.4734",
+              "longitude": "88.3184"
+            },
+            "openingHours": "Mo-Su 10:00-22:00",
+            "priceRange": "₹₹",
+            "paymentAccepted": "Cash, UPI",
+            "emergencyService": true,
+            "hasMap": "https://maps.app.goo.gl/RFjVhRT4btQzLtwK7",
+            "areaServed": ["Parnasree", "Behala", "Thakurpukur", "Joka", "South Kolkata"],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Pet Grooming",
+                "value": "Professional grooming services available"
+              },
+              {
+                "@type": "PropertyValue", 
+                "name": "Pet Boarding",
+                "value": "Safe boarding facilities available"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Diagnostic Lab",
+                "value": "In-house pathology and radiology services"
+              }
+            ]
+          })
+        }}
+      />
     </main>
   );
 };
