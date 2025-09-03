@@ -15,43 +15,58 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Vet in Baranagar | 24/7 Emergency Pet Clinic | Dr. Selim SK",
-  description:
-    "Need a trusted vet in Baranagar? Dr. Selim SK's North Kolkata clinic on Gopal Lal Tagore Rd offers checkups, vaccinations & 24/7 emergency services. Call now.",
+  title: "Dr. Selim SK (VETERINARY DOCTOR & SURGEON) | Vet in Baranagar",
+  description: "Official page for Dr. Selim SK (VETERINARY DOCTOR & SURGEON) in Baranagar. Offering expert pet care, surgery, and 24/7 emergency services. Call +91 6291630297.",
   keywords:
-    "veterinary clinic Baranagar, pet doctor North Kolkata, animal hospital Gopal Lal Tagore Road, vet near Baranagar station",
+    "Dr Selim SK veterinarian Baranagar, veterinary doctor Gopal Lal Tagore Road, pet doctor North Kolkata, animal hospital Baranagar 700036",
+  openGraph: {
+    title: "Dr. Selim SK (VETERINARY DOCTOR & SURGEON) | Vet in Baranagar",
+    description: "Official page for Dr. Selim SK (VETERINARY DOCTOR & SURGEON) in Baranagar. Expert pet care, surgery, and 24/7 emergency services.",
+    url: "https://www.drselimsk.com/locations/baranagar",
+    type: "website",
+    locale: "en_IN",
+  },
 };
 
 const BaranagarPage = () => {
   const locationDetails = {
-    name: "Baranagar Clinic",
-    address:
-      "J9RF+MQ5, Gopal Lal Tagore Rd, Neogipara, Joyshree, Ashokgarh, Baranagar, West Bengal 700035",
-    mapUrl: "https://maps.app.goo.gl/73JM5BbWbpVeeVqH9",
-    area: "North Kolkata",
-    pincode: "700035",
+    businessName: "Dr. Selim SK (VETERINARY DOCTOR & SURGEON)",
+    fullAddress: "Gopal Lal Tagore Rd, Neogipara, Joyshree, Ashokgarh, Baranagar, West Bengal 700036",
+    streetAddress: "Gopal Lal Tagore Rd, Neogipara, Joyshree, Ashokgarh",
+    addressLocality: "Baranagar",
+    addressRegion: "West Bengal",
+    postalCode: "700036",
+    addressCountry: "IN",
+    plusCode: "J9RF+MQ5",
+    phoneNumber: "+916291630297",
+    websiteUrl: "https://www.drselimsk.com/locations/baranagar",
+    geoCoordinates: {
+      latitude: 22.6291628,
+      longitude: 88.3744686
+    },
+    gmbUrl: "https://www.google.com/maps/place/Dr.+Selim+SK+(VETERINARY+DOCTOR+%26+SURGEON)/@22.641632,88.0696047,11z/data=!4m6!3m5!1s0x39f89d007814382d:0xe1dcd3431694b948!8m2!3d22.641632!4d88.3744753!16s%2Fg%2F11y3nfznx_?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D"
   };
 
   const services = [
     {
       icon: Stethoscope,
       title: "Complete Health Checkups",
-      description: "Our comprehensive examinations for dogs, cats, and other pets help detect issues early, ensuring your companion stays healthy and happy. Ideal for residents of Baranagar and the surrounding North Kolkata area.",
+      description: "Comprehensive examinations for dogs, cats, and other pets to detect issues early and ensure your companion stays healthy. Serving Baranagar and North Kolkata area.",
     },
     {
       icon: CheckCircle,
       title: "Vaccination Programs",
-      description: "We provide complete immunization schedules tailored to your pet's age and lifestyle, protecting them from common diseases. Keep your pet safe with our vaccination programs.",
+      description: "Complete immunization schedules tailored to your pet's age and lifestyle, protecting them from common diseases in the Baranagar region.",
     },
     {
       icon: Phone,
       title: "Emergency Care",
-      description: "Pet emergencies can happen anytime. Our Baranagar clinic offers 24/7 emergency veterinary services, providing critical care when you need it most. We are the go-to emergency vet for North Kolkata.",
+      description: "24/7 emergency veterinary services available at our Baranagar clinic. Critical care when you need it most in North Kolkata.",
     },
     {
       icon: Home,
       title: "Home Visits",
-      description: "For your convenience and your pet's comfort, we offer home visits in Baranagar, Dum Dum, and nearby areas. Get expert veterinary care delivered to your doorstep.",
+      description: "Convenient home visit services in Baranagar, Dum Dum, and nearby North Kolkata areas. Expert veterinary care at your doorstep.",
     },
   ];
 
@@ -91,19 +106,19 @@ const BaranagarPage = () => {
                 <span>North Kolkata Location</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                Your Trusted <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
-                  Veterinary Clinic in Baranagar
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">
+                  Dr. Selim SK (VETERINARY DOCTOR & SURGEON) in Baranagar
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Providing professional and compassionate veterinary care from the heart of North Kolkata. Our Baranagar clinic, conveniently located on Gopal Lal Tagore Road, is fully equipped to handle everything from routine checkups to emergencies.
+                Professional and compassionate veterinary care from the heart of North Kolkata. Our Baranagar clinic, conveniently located on Gopal Lal Tagore Road, is fully equipped to handle everything from routine checkups to emergencies.
               </p>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-blue-600" />
                   <span className="text-slate-700">
-                    {locationDetails.address}
+                    {locationDetails.fullAddress}
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -115,17 +130,17 @@ const BaranagarPage = () => {
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-orange-600" />
                   <a
-                    href="tel:+916291630297"
+                    href={`tel:${locationDetails.phoneNumber}`}
                     className="text-orange-600 hover:text-orange-700 font-medium"
                   >
-                    +91 6291630297
+                    {locationDetails.phoneNumber}
                   </a>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href={locationDetails.mapUrl}
+                  href={locationDetails.gmbUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-blue-500 to-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-blue-600 hover:to-blue-700 transition-all duration-200 flex items-center justify-center space-x-2"
@@ -134,7 +149,7 @@ const BaranagarPage = () => {
                   <span>Get Directions</span>
                 </a>
                 <a
-                  href="tel:+916291630297"
+                  href={`tel:${locationDetails.phoneNumber}`}
                   className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-200 flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
@@ -148,7 +163,7 @@ const BaranagarPage = () => {
               <div className="relative bg-white p-6 rounded-2xl shadow-2xl">
                 <Image
                   src="/images/hero-veterinary.webp"
-                  alt="Baranagar Veterinary Clinic"
+                  alt="Dr. Selim SK (VETERINARY DOCTOR & SURGEON) Baranagar Clinic"
                   width={400}
                   height={320}
                   className="w-full h-80 object-cover rounded-lg"
@@ -233,13 +248,29 @@ const BaranagarPage = () => {
               </div>
             </div>
 
-            {/* Landmarks */}
+            {/* Google Maps Embed */}
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">
-                Nearby Landmarks
+                Find Us on Map
               </h3>
+              
+              <div className="aspect-video rounded-lg overflow-hidden mb-4">
+                <iframe
+                  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dO4X0VdPOhOOOI&q=${encodeURIComponent(locationDetails.plusCode + ' ' + locationDetails.businessName)}&zoom=16`}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={`Map showing location of ${locationDetails.businessName} in Baranagar`}
+                ></iframe>
+              </div>
 
               <div className="space-y-3">
+                <h4 className="font-semibold text-slate-900 mb-2">
+                  Nearby Landmarks
+                </h4>
                 {landmarks.map((landmark, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-blue-500 rounded-full"></div>
@@ -248,13 +279,12 @@ const BaranagarPage = () => {
                 ))}
               </div>
 
-              <div className="mt-8 p-4 bg-green-50 rounded-lg">
+              <div className="mt-6 p-4 bg-green-50 rounded-lg">
                 <h4 className="font-semibold text-slate-900 mb-2">
-                  Area Coverage
+                  Plus Code Location
                 </h4>
                 <p className="text-sm text-slate-600">
-                  We serve pets from Baranagar, Dunlop, Sodepur, Khardaha, and
-                  surrounding North Kolkata areas.
+                  {locationDetails.plusCode} - Use this code for precise navigation
                 </p>
               </div>
             </div>
@@ -262,38 +292,94 @@ const BaranagarPage = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
+      {/* Contact Information */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-slate-50 to-blue-50 rounded-2xl p-8">
+            <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">
+              Contact Information
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-slate-900">Business Details</h3>
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Business Name</h4>
+                    <p className="text-slate-600">{locationDetails.businessName}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Complete Address</h4>
+                    <p className="text-slate-600">{locationDetails.fullAddress}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Phone Number</h4>
+                    <a
+                      href={`tel:${locationDetails.phoneNumber}`}
+                      className="text-orange-600 hover:text-orange-700 font-medium"
+                    >
+                      {locationDetails.phoneNumber}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-slate-900">Location Details</h3>
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Plus Code</h4>
+                    <p className="text-slate-600">{locationDetails.plusCode}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Postal Code</h4>
+                    <p className="text-slate-600">{locationDetails.postalCode}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Coordinates</h4>
+                    <p className="text-slate-600">
+                      {locationDetails.geoCoordinates.latitude}, {locationDetails.geoCoordinates.longitude}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
             Frequently Asked Questions
           </h2>
           
           <div className="max-w-4xl mx-auto space-y-8">
-            <div className="bg-slate-50 p-6 rounded-lg">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-lg font-bold text-slate-900 mb-3">
-                Where is your Baranagar clinic located?
+                Where exactly is Dr. Selim SK's Baranagar clinic located?
               </h3>
               <p className="text-slate-600">
-                Our clinic is on Gopal Lal Tagore Road in Ashokgarh, easily accessible from Barrackpore Trunk Road and Dum Dum. We are a key animal hospital serving North Kolkata.
+                Our clinic is located at {locationDetails.fullAddress}. You can find us using the Plus Code {locationDetails.plusCode} for precise navigation.
               </p>
             </div>
             
-            <div className="bg-slate-50 p-6 rounded-lg">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-lg font-bold text-slate-900 mb-3">
-                Do you provide emergency services at this location?
+                Do you provide emergency services at this Baranagar location?
               </h3>
               <p className="text-slate-600">
-                Yes, we offer 24/7 emergency services at our Baranagar clinic. If your pet needs urgent care in North Kolkata, please call us immediately.
+                Yes, we offer 24/7 emergency services at our Baranagar clinic. If your pet needs urgent care in North Kolkata, please call us immediately at <a href={`tel:${locationDetails.phoneNumber}`} className="text-orange-600 hover:text-orange-700 font-medium">{locationDetails.phoneNumber}</a>.
               </p>
             </div>
             
-            <div className="bg-slate-50 p-6 rounded-lg">
+            <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-lg font-bold text-slate-900 mb-3">
-                Is there parking available?
+                Is parking available at the clinic?
               </h3>
               <p className="text-slate-600">
-                Yes, convenient parking is available for both cars and two-wheelers near the clinic.
+                Yes, convenient parking is available for both cars and two-wheelers near our clinic on Gopal Lal Tagore Road.
               </p>
             </div>
           </div>
@@ -313,14 +399,14 @@ const BaranagarPage = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+916291630297"
+              href={`tel:${locationDetails.phoneNumber}`}
               className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call: +91 6291630297</span>
+              <span>Call: {locationDetails.phoneNumber}</span>
             </a>
             <a
-              href="https://wa.me/916291630297?text=Hello%20Dr.%20Selim,%20I%20need%20consultation%20at%20Baranagar%20clinic"
+              href={`https://wa.me/${locationDetails.phoneNumber.replace('+', '')}?text=Hello%20Dr.%20Selim,%20I%20need%20consultation%20at%20Baranagar%20clinic`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
@@ -331,8 +417,7 @@ const BaranagarPage = () => {
 
           <div className="mt-8 text-blue-100">
             <p>
-              Located on Gopal Lal Tagore Road • Easy access from Baranagar
-              Station
+              Located on Gopal Lal Tagore Road • Easy access from Baranagar Station • Postal Code: {locationDetails.postalCode}
             </p>
           </div>
         </div>
@@ -344,30 +429,53 @@ const BaranagarPage = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "VeterinaryCare",
-            "name": "Dr. Selim SK - Baranagar Veterinary Clinic",
+            "name": locationDetails.businessName,
             "description": "Professional veterinary care in Baranagar, North Kolkata with 24/7 emergency services",
-            "url": "https://drselimsk.com/locations/baranagar",
-            "telephone": "+916291630297",
+            "url": locationDetails.websiteUrl,
+            "telephone": locationDetails.phoneNumber,
             "email": "mstgunahar@gmail.com",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "J9RF+MQ5, Gopal Lal Tagore Rd, Neogipara, Joyshree, Ashokgarh",
-              "addressLocality": "Baranagar",
-              "addressRegion": "West Bengal",
-              "postalCode": "700035",
-              "addressCountry": "IN"
+              "streetAddress": locationDetails.streetAddress,
+              "addressLocality": locationDetails.addressLocality,
+              "addressRegion": locationDetails.addressRegion,
+              "postalCode": locationDetails.postalCode,
+              "addressCountry": locationDetails.addressCountry
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "22.6416",
-              "longitude": "88.3742"
+              "latitude": locationDetails.geoCoordinates.latitude.toString(),
+              "longitude": locationDetails.geoCoordinates.longitude.toString()
             },
             "openingHours": "Mo-Su 10:00-22:00",
             "priceRange": "₹₹",
-            "paymentAccepted": "Cash, UPI",
+            "paymentAccepted": ["Cash", "UPI"],
             "emergencyService": true,
-            "hasMap": "https://maps.app.goo.gl/73JM5BbWbpVeeVqH9",
-            "areaServed": ["Baranagar", "Dum Dum", "North Kolkata", "Sodepur", "Khardaha"]
+            "hasMap": locationDetails.gmbUrl,
+            "areaServed": [
+              locationDetails.addressLocality,
+              "Dum Dum", 
+              "North Kolkata", 
+              "Sodepur", 
+              "Khardaha"
+            ],
+            "additionalProperty": [
+              {
+                "@type": "PropertyValue",
+                "name": "Plus Code",
+                "value": locationDetails.plusCode
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Emergency Services",
+                "value": "Available 24/7"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Home Visits",
+                "value": "Available in North Kolkata area"
+              }
+            ]
           })
         }}
       />
