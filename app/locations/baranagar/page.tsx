@@ -44,7 +44,7 @@ const BaranagarPage = () => {
       latitude: 22.6291628,
       longitude: 88.3744686
     },
-    gmbUrl: "https://www.google.com/maps/place/Dr.+Selim+SK+(VETERINARY+DOCTOR+%26+SURGEON)/@22.641632,88.0696047,11z/data=!4m6!3m5!1s0x39f89d007814382d:0xe1dcd3431694b948!8m2!3d22.641632!4d88.3744753!16s%2Fg%2F11y3nfznx_?entry=ttu&g_ep=EgoyMDI1MDgzMC4wIKXMDSoASAFQAw%3D%3D"
+    gmbUrl: "https://maps.app.goo.gl/73JM5BbWbpVeeVqH9"
   };
 
   const services = [
