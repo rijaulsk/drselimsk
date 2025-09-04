@@ -16,33 +16,46 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Vet in Maheshtala | Large Animal Care | Dr. Selim SK",
-  description:
-    "Dr. Selim SK's clinic in Maheshtala (Nangi) serves Budge Budge and South Kolkata, specializing in home visits and large animal care. Call us for community-focused vet services.",
-  keywords:
-    "veterinary clinic Maheshtala, pet doctor South Kolkata, animal hospital Nangi, vet near Nangi station",
+  title: "Dr. SELIM SK (VETERINARY DOCTOR) in Maheshtala | Vet Clinic",
+  description: "Visit Dr. SELIM SK (VETERINARY DOCTOR) in Nangi, Maheshtala for expert pet and large animal care. Compassionate veterinary services. Call +91 6291630297 for emergencies.",
+  keywords: "Dr SELIM SK veterinary doctor Maheshtala, vet clinic Nangi, animal hospital Maheshtala, veterinary services West Bengal 700140",
+  openGraph: {
+    title: "Dr. SELIM SK (VETERINARY DOCTOR) in Maheshtala | Vet Clinic",
+    description: "Visit Dr. SELIM SK (VETERINARY DOCTOR) in Nangi, Maheshtala for expert pet and large animal care. Compassionate veterinary services.",
+    url: "https://www.drselimsk.com/locations/maheshtala",
+    type: "website",
+    locale: "en_IN",
+  },
 };
 
-const BudgeBudgePage = () => {
+const MaheshtalePage = () => {
   const locationDetails = {
-    name: "Maheshtala Clinic",
-    address: "MORE, Nangi, Budge Budge, Maheshtala, West Bengal 700140",
-    mapUrl:
-      "https://maps.app.goo.gl/Y4G6CeGeBuj2Ff8D9",
-    area: "South Kolkata",
-    pincode: "700140",
+    businessName: "Dr. SELIM SK (VETERINARY DOCTOR)",
+    fullAddress: "MORE, Nangi, Maheshtala, West Bengal 700140",
+    streetAddress: "MORE, Nangi",
+    addressLocality: "Maheshtala",
+    addressRegion: "West Bengal",
+    postalCode: "700140",
+    addressCountry: "IN",
+    phoneNumber: "+916291630297",
+    websiteUrl: "https://www.drselimsk.com/locations/maheshtala",
+    geoCoordinates: {
+      latitude: 22.4964,
+      longitude: 88.2734
+    },
+    gmbUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.092721118671!2d88.2708354149582!3d22.49984688521946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0279e8c0000001%3A0x7d6b8b1b8b8b8b8b!2sDr.%20SELIM%20SK%20(VETERINARY%20DOCTOR)!5e0!3m2!1sen!2sin!4v1678886400000!5m2!1sen!2sin"
   };
 
   const services = [
     {
       icon: Home,
       title: "Home Visit Services",
-      description: "We understand it's not always easy to bring your pet to the clinic. That's why we offer extensive home visit services throughout Maheshtala, Budge Budge, and nearby areas.",
+      description: "We understand it's not always easy to bring your pet to the clinic. That's why we offer extensive home visit services throughout Maheshtala, and nearby areas.",
     },
     {
       icon: Stethoscope,
       title: "Large Animal Care",
-      description: "Dr. Selim SK has expertise in treating large animals. If you have farm animals in the South Kolkata rural belt needing care, our Maheshtala center is your trusted partner.",
+      description: "Dr. SELIM SK has expertise in treating large animals. If you have farm animals in the South Kolkata rural belt needing care, our Maheshtala center is your trusted partner.",
     },
     {
       icon: CheckCircle,
@@ -52,13 +65,13 @@ const BudgeBudgePage = () => {
     {
       icon: Phone,
       title: "Emergency Response",
-      description: "Our team is ready to respond to emergencies for both pets and large animals. We provide prompt and effective care to the entire Budge Budge area.",
+      description: "Our team is ready to respond to emergencies for both pets and large animals. We provide prompt and effective care to the entire Maheshtala area.",
     },
   ];
 
   const landmarks = [
     "Near Nangi Railway Station",
-    "Close to Budge Budge Trunk Road",
+    "Close to Maheshtala Trunk Road",
     "Nangi Market Area",
   ];
 
@@ -66,7 +79,7 @@ const BudgeBudgePage = () => {
     {
       icon: Train,
       mode: "Railway",
-      details: "Budge Budge Station on Sealdah-Diamond Harbour line",
+      details: "Nangi Station on Sealdah-Diamond Harbour line",
     },
     {
       icon: Bus,
@@ -76,7 +89,7 @@ const BudgeBudgePage = () => {
     {
       icon: Ship,
       mode: "Ferry",
-      details: "Budge Budge Ghat for river transport",
+      details: "River transport connections available",
     },
   ];
 
@@ -99,19 +112,19 @@ const BudgeBudgePage = () => {
                 <span>South Kolkata Location</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                Community-Focused <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">
-                  Vet Clinic in Maheshtala
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-teal-600">
+                  Dr. SELIM SK (VETERINARY DOCTOR) - Vet in Maheshtala
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Serving the Maheshtala and Budge Budge communities, our clinic in Nangi is dedicated to providing accessible and compassionate veterinary care for all animals, including specialized services for large farm animals.
+                Serving the Maheshtala and Nangi communities, our clinic is dedicated to providing accessible and compassionate veterinary care for all animals, including specialized services for large farm animals.
               </p>
 
               <div className="space-y-4 mb-8">
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-green-600" />
                   <span className="text-slate-700">
-                    {locationDetails.address}
+                    {locationDetails.fullAddress}
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -123,17 +136,17 @@ const BudgeBudgePage = () => {
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-orange-600" />
                   <a
-                    href="tel:+916291630297"
+                    href={`tel:${locationDetails.phoneNumber}`}
                     className="text-orange-600 hover:text-orange-700 font-medium"
                   >
-                    +91 6291630297
+                    {locationDetails.phoneNumber}
                   </a>
                 </div>
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
                 <a
-                  href={locationDetails.mapUrl}
+                  href={locationDetails.gmbUrl}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="bg-gradient-to-r from-green-500 to-green-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-green-600 hover:to-green-700 transition-all duration-200 flex items-center justify-center space-x-2"
@@ -142,7 +155,7 @@ const BudgeBudgePage = () => {
                   <span>Get Directions</span>
                 </a>
                 <a
-                  href="tel:+916291630297"
+                  href={`tel:${locationDetails.phoneNumber}`}
                   className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-200 flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
@@ -156,7 +169,7 @@ const BudgeBudgePage = () => {
               <div className="relative bg-white p-6 rounded-2xl shadow-2xl">
                 <Image
                   src="/images/hero-veterinary.webp"
-                  alt="Maheshtala Veterinary Clinic"
+                  alt="Dr. SELIM SK (VETERINARY DOCTOR) Maheshtala Clinic"
                   width={400}
                   height={320}
                   className="w-full h-80 object-cover rounded-lg"
@@ -232,43 +245,108 @@ const BudgeBudgePage = () => {
 
               <div className="mt-8 p-4 bg-green-50 rounded-lg">
                 <h4 className="font-semibold text-slate-900 mb-2">
-                  Unique Access
+                  Convenient Access
                 </h4>
                 <p className="text-sm text-slate-600">
-                  Only veterinary clinic in the area accessible by both road and
-                  river transport via Budge Budge Ghat.
+                  Easily accessible veterinary clinic in Maheshtala with convenient transportation options.
                 </p>
               </div>
             </div>
 
-            {/* Landmarks & Features */}
+            {/* Google Maps Embed */}
             <div className="bg-white p-8 rounded-2xl shadow-lg">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">
-                Location Highlights
+                Find Us on Map
               </h3>
+              
+              <div className="aspect-video rounded-lg overflow-hidden mb-4">
+                <iframe
+                  src={locationDetails.gmbUrl}
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title={`Map showing location of ${locationDetails.businessName} in Maheshtala`}
+                ></iframe>
+              </div>
 
-              <div className="space-y-3 mb-6">
-                <h4 className="font-semibold text-slate-900">
+              <div className="space-y-3">
+                <h4 className="font-semibold text-slate-900 mb-2">
                   Nearby Landmarks
                 </h4>
                 {landmarks.map((landmark, index) => (
                   <div key={index} className="flex items-center space-x-3">
                     <div className="w-2 h-2 bg-green-500 rounded-full"></div>
-                    <span className="text-slate-700 text-sm">{landmark}</span>
+                    <span className="text-slate-700">{landmark}</span>
                   </div>
                 ))}
               </div>
 
-              <div className="space-y-3">
-                <h4 className="font-semibold text-slate-900">
-                  Special Features
+              <div className="mt-6 p-4 bg-green-50 rounded-lg">
+                <h4 className="font-semibold text-slate-900 mb-2">
+                  Location Details
                 </h4>
-                {specialFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-green-500" />
-                    <span className="text-slate-700 text-sm">{feature}</span>
+                <p className="text-sm text-slate-600">
+                  {locationDetails.fullAddress}
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Information */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-slate-50 to-green-50 rounded-2xl p-8">
+            <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">
+              Contact Information
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-slate-900">Business Details</h3>
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Business Name</h4>
+                    <p className="text-slate-600">{locationDetails.businessName}</p>
                   </div>
-                ))}
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Complete Address</h4>
+                    <p className="text-slate-600">{locationDetails.fullAddress}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Phone Number</h4>
+                    <a
+                      href={`tel:${locationDetails.phoneNumber}`}
+                      className="text-orange-600 hover:text-orange-700 font-medium"
+                    >
+                      {locationDetails.phoneNumber}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-slate-900">Location Details</h3>
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Postal Code</h4>
+                    <p className="text-slate-600">{locationDetails.postalCode}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Region</h4>
+                    <p className="text-slate-600">{locationDetails.addressRegion}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Coordinates</h4>
+                    <p className="text-slate-600">
+                      {locationDetails.geoCoordinates.latitude}, {locationDetails.geoCoordinates.longitude}
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -315,19 +393,19 @@ const BudgeBudgePage = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="bg-slate-50 p-6 rounded-lg">
               <h3 className="text-lg font-bold text-slate-900 mb-3">
-                Do you treat farm animals like goats or cows?
+                Where exactly is Dr. SELIM SK's Maheshtala clinic located?
               </h3>
               <p className="text-slate-600">
-                Yes, our Maheshtala clinic specializes in large animal care. Dr. Selim has extensive experience treating farm and rural animals.
+                Our clinic is located at {locationDetails.fullAddress}. You can find us easily near Nangi Railway Station.
               </p>
             </div>
             
             <div className="bg-slate-50 p-6 rounded-lg">
               <h3 className="text-lg font-bold text-slate-900 mb-3">
-                How do I get to your clinic?
+                Do you treat farm animals like goats or cows?
               </h3>
               <p className="text-slate-600">
-                We are located in Nangi (MORE), very close to Nangi Railway Station and Budge Budge Trunk Road, making us easily accessible for the entire area.
+                Yes, our Maheshtala clinic specializes in large animal care. Dr. SELIM SK has extensive experience treating farm and rural animals.
               </p>
             </div>
             
@@ -356,14 +434,14 @@ const BudgeBudgePage = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+916291630297"
+              href={`tel:${locationDetails.phoneNumber}`}
               className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call: +91 6291630297</span>
+              <span>Call: {locationDetails.phoneNumber}</span>
             </a>
             <a
-              href="https://wa.me/916291630297?text=Hello%20Dr.%20Selim,%20I%20need%20consultation%20at%20Budge%20Budge%20center"
+              href={`https://wa.me/${locationDetails.phoneNumber.replace('+', '')}?text=Hello%20Dr.%20SELIM%20SK,%20I%20need%20consultation%20at%20Maheshtala%20center`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
@@ -386,30 +464,46 @@ const BudgeBudgePage = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "VeterinaryCare",
-            "name": "Dr. Selim SK - Maheshtala Veterinary Clinic",
-            "description": "Community-focused veterinary care in Maheshtala with large animal care and home visits",
-            "url": "https://drselimsk.com/locations/maheshtala",
-            "telephone": "+916291630297",
-            "email": "mstgunahar@gmail.com",
+            "name": locationDetails.businessName,
+            "image": "https://www.drselimsk.com/images/hero-veterinary.webp",
+            "@id": locationDetails.websiteUrl,
+            "url": locationDetails.websiteUrl,
+            "telephone": locationDetails.phoneNumber,
+            "priceRange": "$$",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "MORE, Nangi, Budge Budge",
-              "addressLocality": "Maheshtala",
-              "addressRegion": "West Bengal",
-              "postalCode": "700140",
-              "addressCountry": "IN"
+              "streetAddress": locationDetails.streetAddress,
+              "addressLocality": locationDetails.addressLocality,
+              "postalCode": locationDetails.postalCode,
+              "addressRegion": locationDetails.addressRegion,
+              "addressCountry": locationDetails.addressCountry
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "22.4697",
-              "longitude": "88.1781"
+              "latitude": locationDetails.geoCoordinates.latitude.toString(),
+              "longitude": locationDetails.geoCoordinates.longitude.toString()
             },
-            "openingHours": "Mo-Su 10:00-22:00",
-            "priceRange": "₹₹",
-            "paymentAccepted": "Cash, UPI",
-            "emergencyService": true,
-            "hasMap": "https://maps.app.goo.gl/Y4G6CeGeBuj2Ff8D9",
-            "areaServed": ["Maheshtala", "Budge Budge", "Nangi", "South Kolkata", "Pujali", "Sankrail"],
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday", 
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "10:00",
+              "closes": "22:00"
+            },
+            "areaServed": [
+              locationDetails.addressLocality,
+              "Nangi",
+              "South Kolkata",
+              "Pujali",
+              "Sankrail"
+            ],
             "additionalProperty": [
               {
                 "@type": "PropertyValue",
@@ -434,4 +528,4 @@ const BudgeBudgePage = () => {
   );
 };
 
-export default BudgeBudgePage;
+export default MaheshtalePage;
