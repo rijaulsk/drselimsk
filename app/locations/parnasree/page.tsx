@@ -17,21 +17,29 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title:
-    "Vet Clinic in Parnasree | Pet Grooming & Boarding | Dr. Selim SK",
-  description:
-    "Full-service vet clinic in Parnasree, South Kolkata. Dr. Selim SK offers health checkups, diagnostics, professional pet grooming, and safe boarding facilities near Behala.",
+  title: "Dr. Selim Sk (Veterinary Doctor & Surgeon) | Parnasree, Kolkata",
+  description: "Visit Dr. Selim Sk's veterinary clinic at 58, Kalimata Colony Rd, Parnasree Palli, Kolkata for expert and compassionate pet care. Call +91 6291630297 for appointments.",
   keywords:
-    "veterinary clinic Parnasree, pet doctor Behala, animal hospital Kalimata Colony Road, vet near Parnasree club",
+    "Dr Selim Sk veterinary doctor Parnasree, pet doctor Behala, animal hospital Kalimata Colony Road, vet near Parnasree club",
 };
 
 const ParnasreePalliPage = () => {
   const locationDetails = {
+    businessName: "Dr. Selim Sk (Veterinary Doctor & Surgeon)",
     name: "Parnasree Clinic",
-    address:
-      "58, Kalimata Colony Rd, Parnasree Palli, Kolkata, West Bengal 700060",
-    mapUrl:
-      "https://maps.app.goo.gl/RFjVhRT4btQzLtwK7",
+    address: "58, Kalimata Colony Rd, Parnasree Palli, Kolkata, West Bengal 700060",
+    streetAddress: "58, Kalimata Colony Rd, Parnasree Palli",
+    addressLocality: "Kolkata",
+    addressRegion: "West Bengal",
+    postalCode: "700060",
+    addressCountry: "IN",
+    phoneNumber: "+916291630297",
+    websiteUrl: "https://www.drselimsk.com/locations/parnasree",
+    geoCoordinates: {
+      latitude: 22.502578,
+      longitude: 88.301167
+    },
+    mapUrl: "https://maps.app.goo.gl/RFjVhRT4btQzLtwK7",
     area: "South Kolkata",
     pincode: "700060",
   };
@@ -125,8 +133,8 @@ const ParnasreePalliPage = () => {
                 <span>South Kolkata Location</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                Full-Service <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                  Veterinary Clinic in Parnasree
+                Veterinary Clinic in Parnasree Palli: <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+                  Dr. Selim Sk
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-8">
@@ -149,10 +157,10 @@ const ParnasreePalliPage = () => {
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-orange-600" />
                   <a
-                    href="tel:+916291630297"
+                    href={`tel:${locationDetails.phoneNumber}`}
                     className="text-orange-600 hover:text-orange-700 font-medium"
                   >
-                    +91 6291630297
+                    {locationDetails.phoneNumber}
                   </a>
                 </div>
               </div>
@@ -168,7 +176,7 @@ const ParnasreePalliPage = () => {
                   <span>Get Directions</span>
                 </a>
                 <a
-                  href="tel:+916291630297"
+                  href={`tel:${locationDetails.phoneNumber}`}
                   className="bg-gradient-to-r from-orange-500 to-orange-600 text-white px-6 py-3 rounded-lg font-semibold hover:from-orange-600 hover:to-orange-700 transition-all duration-200 flex items-center justify-center space-x-2"
                 >
                   <Phone className="h-5 w-5" />
@@ -332,6 +340,62 @@ const ParnasreePalliPage = () => {
         </div>
       </section>
 
+      {/* Contact Information */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="bg-gradient-to-r from-slate-50 to-purple-50 rounded-2xl p-8">
+            <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">
+              Contact Information
+            </h2>
+            
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-slate-900">Business Details</h3>
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Business Name</h4>
+                    <p className="text-slate-600">{locationDetails.businessName}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Complete Address</h4>
+                    <p className="text-slate-600">{locationDetails.address}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Phone Number</h4>
+                    <a
+                      href={`tel:${locationDetails.phoneNumber}`}
+                      className="text-orange-600 hover:text-orange-700 font-medium"
+                    >
+                      {locationDetails.phoneNumber}
+                    </a>
+                  </div>
+                </div>
+              </div>
+              
+              <div className="space-y-4">
+                <h3 className="text-xl font-bold text-slate-900">Location Details</h3>
+                <div className="space-y-3">
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Postal Code</h4>
+                    <p className="text-slate-600">{locationDetails.postalCode}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Region</h4>
+                    <p className="text-slate-600">{locationDetails.addressRegion}</p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-slate-700">Coordinates</h4>
+                    <p className="text-slate-600">
+                      {locationDetails.geoCoordinates.latitude}, {locationDetails.geoCoordinates.longitude}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* FAQ Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -363,7 +427,7 @@ const ParnasreePalliPage = () => {
                 How can I book a grooming appointment?
               </h3>
               <p className="text-slate-600">
-                You can book a pet grooming appointment by calling us directly at +91 6291630297. We recommend booking in advance.
+                You can book a pet grooming appointment by calling us directly at <a href={`tel:${locationDetails.phoneNumber}`} className="text-orange-600 hover:text-orange-700 font-medium">{locationDetails.phoneNumber}</a>. We recommend booking in advance.
               </p>
             </div>
           </div>
@@ -383,14 +447,14 @@ const ParnasreePalliPage = () => {
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
-              href="tel:+916291630297"
+              href={`tel:${locationDetails.phoneNumber}`}
               className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
-              <span>Call: +91 6291630297</span>
+              <span>Call: {locationDetails.phoneNumber}</span>
             </a>
             <a
-              href="https://wa.me/916291630297?text=Hello%20Dr.%20Selim,%20I%20need%20consultation%20at%20Parnasree%20Palli%20location"
+              href={`https://wa.me/${locationDetails.phoneNumber.replace('+', '')}?text=Hello%20Dr.%20Selim%20Sk,%20I%20need%20consultation%20at%20Parnasree%20Palli%20location`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
@@ -414,29 +478,39 @@ const ParnasreePalliPage = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "VeterinaryCare",
-            "name": "Dr. Selim SK - Parnasree Veterinary Clinic",
-            "description": "Full-service veterinary facility in Parnasree with diagnostic services, grooming, and boarding",
-            "url": "https://drselimsk.com/locations/parnasree",
-            "telephone": "+916291630297",
-            "email": "mstgunahar@gmail.com",
+            "name": locationDetails.businessName,
+            "image": "https://www.drselimsk.com/images/hero-veterinary.webp",
+            "@id": locationDetails.websiteUrl,
+            "url": locationDetails.websiteUrl,
+            "telephone": locationDetails.phoneNumber,
+            "priceRange": "$$",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": "58, Kalimata Colony Rd",
-              "addressLocality": "Parnasree Palli, Kolkata",
-              "addressRegion": "West Bengal",
-              "postalCode": "700060",
-              "addressCountry": "IN"
+              "streetAddress": locationDetails.streetAddress,
+              "addressLocality": locationDetails.addressLocality,
+              "postalCode": locationDetails.postalCode,
+              "addressRegion": locationDetails.addressRegion,
+              "addressCountry": locationDetails.addressCountry
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": "22.4734",
-              "longitude": "88.3184"
+              "latitude": locationDetails.geoCoordinates.latitude.toString(),
+              "longitude": locationDetails.geoCoordinates.longitude.toString()
             },
-            "openingHours": "Mo-Su 10:00-22:00",
-            "priceRange": "₹₹",
-            "paymentAccepted": "Cash, UPI",
-            "emergencyService": true,
-            "hasMap": "https://maps.app.goo.gl/RFjVhRT4btQzLtwK7",
+            "openingHoursSpecification": {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
+              ],
+              "opens": "10:00",
+              "closes": "22:00"
+            },
             "areaServed": ["Parnasree", "Behala", "Thakurpukur", "Joka", "South Kolkata"],
             "additionalProperty": [
               {
