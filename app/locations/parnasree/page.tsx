@@ -14,13 +14,22 @@ import {
   Stethoscope,
   Camera,
   Scissors,
+  Heart,
+  Shield,
+  Users,
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Dr. Selim Sk (Veterinary Doctor & Surgeon) | Parnasree, Kolkata",
-  description: "Visit Dr. Selim Sk's veterinary clinic at 58, Kalimata Colony Rd, Parnasree Palli, Kolkata for expert and compassionate pet care. Call +91 6291630297 for appointments.",
-  keywords:
-    "Dr Selim Sk veterinary doctor Parnasree, pet doctor Behala, animal hospital Kalimata Colony Road, vet near Parnasree club",
+  title: "Dr. Selim Sk (Veterinary Doctor & Surgeon) in Parnasree | Vet Clinic Kolkata",
+  description: "Expert veterinary care at Dr. Selim Sk's clinic in Parnasree, Kolkata. We offer 24/7 emergency services, pet grooming, and advanced diagnostics. Call +91 6291630297 to book an appointment.",
+  keywords: "Dr Selim Sk veterinary doctor Parnasree, pet doctor Behala, animal hospital Kalimata Colony Road, vet near Parnasree club, veterinary clinic Kolkata, pet grooming Parnasree",
+  openGraph: {
+    title: "Dr. Selim Sk (Veterinary Doctor & Surgeon) in Parnasree | Vet Clinic Kolkata",
+    description: "Expert veterinary care at Dr. Selim Sk's clinic in Parnasree, Kolkata. We offer 24/7 emergency services, pet grooming, and advanced diagnostics.",
+    url: "https://www.drselimsk.com/locations/parnasree",
+    type: "website",
+    locale: "en_IN",
+  },
 };
 
 const ParnasreePalliPage = () => {
@@ -28,13 +37,14 @@ const ParnasreePalliPage = () => {
     businessName: "Dr. Selim Sk (Veterinary Doctor & Surgeon)",
     name: "Parnasree Clinic",
     address: "58, Kalimata Colony Rd, Parnasree Palli, Kolkata, West Bengal 700060",
-    streetAddress: "58, Kalimata Colony Rd, Parnasree Palli",
-    addressLocality: "Kolkata",
+    streetAddress: "58, Kalimata Colony Rd",
+    addressLocality: "Parnasree Palli, Kolkata",
     addressRegion: "West Bengal",
     postalCode: "700060",
     addressCountry: "IN",
     phoneNumber: "+916291630297",
     websiteUrl: "https://www.drselimsk.com/locations/parnasree",
+    plusCode: "G852+2F",
     geoCoordinates: {
       latitude: 22.502578,
       longitude: 88.301167
@@ -47,23 +57,23 @@ const ParnasreePalliPage = () => {
   const services = [
     {
       icon: Camera,
-      title: "Diagnostic Services",
-      description: "Featuring an in-house lab for pathology and radiology, we provide fast and accurate diagnoses for your pet's health issues, serving the greater Behala and Parnasree area.",
+      title: "Advanced Diagnostic Services",
+      description: "Our Parnasree clinic features state-of-the-art diagnostic equipment including in-house blood testing, digital X-rays, ultrasound, and comprehensive pathology services for accurate diagnosis of your pet's health conditions.",
     },
     {
       icon: Scissors,
-      title: "Pet Grooming",
-      description: "Our professional pet grooming services will keep your pet looking and feeling their best. We offer everything from baths to stylish trims. Book a grooming session at our Parnasree clinic today!",
+      title: "Professional Pet Grooming",
+      description: "Complete grooming services including bathing, nail trimming, ear cleaning, dental care, and stylish cuts. Our professional groomers ensure your pet looks and feels their best in our modern grooming facility.",
     },
     {
       icon: Home,
-      title: "Boarding Facilities",
-      description: "Going out of town? Our safe, clean, and caring pet boarding facilities in Parnasree provide a comfortable home-away-from-home for your dog or cat.",
+      title: "Safe Boarding Facilities",
+      description: "Going out of town? Our clean, comfortable, and secure pet boarding facilities provide a home-away-from-home experience with 24/7 supervision, regular exercise, and personalized care for your beloved companion.",
     },
     {
       icon: Stethoscope,
-      title: "Health Checkups",
-      description: "Regular wellness exams are key to a long, healthy life. Our comprehensive checkups help monitor your pet's health and catch any potential problems early.",
+      title: "Comprehensive Health Checkups",
+      description: "Regular wellness examinations including vaccination updates, parasite screening, dental health assessment, and early disease detection to keep your pet healthy throughout their life.",
     },
   ];
 
@@ -71,13 +81,14 @@ const ParnasreePalliPage = () => {
     "Near Parnasree Club",
     "Close to Kalimata Colony",
     "Behala Chowrasta nearby",
+    "Thakurpukur accessible",
   ];
 
   const transportation = [
     {
       icon: Bus,
       mode: "Bus Routes",
-      details: "Multiple Behala routes, Thakurpukur buses",
+      details: "Multiple Behala routes, Thakurpukur buses, direct connectivity",
     },
     {
       icon: Train,
@@ -87,7 +98,7 @@ const ParnasreePalliPage = () => {
     {
       icon: Car,
       mode: "By Car",
-      details: "Easy access via Kalimata Colony Road",
+      details: "Easy access via Kalimata Colony Road with ample parking",
     },
   ];
 
@@ -96,29 +107,79 @@ const ParnasreePalliPage = () => {
     "Professional grooming station",
     "Comfortable boarding facilities",
     "Specialized surgical suite",
+    "24/7 emergency care",
+    "In-house pharmacy",
   ];
 
   const facilities = [
     {
-      title: "Diagnostic Lab",
-      description: "In-house pathology and biochemistry testing",
+      title: "Advanced Diagnostic Lab",
+      description: "In-house pathology, biochemistry testing, and digital radiography",
       icon: Camera,
     },
     {
-      title: "Grooming Station",
-      description: "Professional pet grooming and hygiene services",
+      title: "Professional Grooming Station",
+      description: "Complete pet grooming and hygiene services with modern equipment",
       icon: Scissors,
     },
     {
-      title: "Boarding Area",
-      description: "Clean, comfortable accommodation for pets",
+      title: "Comfortable Boarding Area",
+      description: "Clean, spacious accommodation with 24/7 supervision",
       icon: Home,
     },
     {
-      title: "Surgery Suite",
-      description: "Modern surgical facilities with monitoring",
+      title: "Modern Surgery Suite",
+      description: "Fully equipped surgical facilities with advanced monitoring systems",
       icon: Stethoscope,
     },
+  ];
+
+  const faqs = [
+    {
+      question: "Do you provide emergency veterinary services in Parnasree?",
+      answer: "Yes, we offer 24/7 emergency services for pets in Parnasree and surrounding areas including Behala and Thakurpukur. Please call us at +91 6291630297 for immediate assistance."
+    },
+    {
+      question: "What are your clinic hours?",
+      answer: "Our Parnasree clinic is open daily from 10:00 AM to 10:00 PM. Emergency services are available 24/7."
+    },
+    {
+      question: "Is parking available at your clinic?",
+      answer: "Yes, we have ample parking space available for our clients at our Kalimata Colony Road location."
+    },
+    {
+      question: "Do you offer pet grooming services?",
+      answer: "Yes, we provide comprehensive pet grooming services including bathing, nail trimming, ear cleaning, and styling. Please call to schedule an appointment."
+    },
+    {
+      question: "Which areas do you serve from the Parnasree location?",
+      answer: "We serve Parnasree, Behala, Thakurpukur, Joka, and surrounding South Kolkata areas. Home visits are also available."
+    },
+    {
+      question: "Do you have boarding facilities for pets?",
+      answer: "Yes, we offer safe and comfortable boarding facilities with 24/7 supervision, regular exercise, and personalized care for your pets."
+    }
+  ];
+
+  const testimonials = [
+    {
+      name: "Priya Sharma",
+      rating: 5,
+      text: "Excellent care for my cat at the Parnasree clinic. Dr. Selim Sk is very knowledgeable and caring. The grooming service is also top-notch!",
+      location: "Parnasree"
+    },
+    {
+      name: "Rajesh Kumar",
+      rating: 5,
+      text: "Best veterinary clinic in South Kolkata. The diagnostic facilities are modern and the staff is very professional. Highly recommended!",
+      location: "Behala"
+    },
+    {
+      name: "Anita Das",
+      rating: 5,
+      text: "Dr. Selim Sk saved my dog's life during an emergency. The 24/7 service is a blessing for pet owners in Parnasree area.",
+      location: "Thakurpukur"
+    }
   ];
 
   return (
@@ -133,12 +194,12 @@ const ParnasreePalliPage = () => {
                 <span>South Kolkata Location</span>
               </div>
               <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-                Veterinary Clinic in Parnasree Palli: <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
-                  Dr. Selim Sk
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600">
+                  Dr. Selim Sk (Veterinary Doctor & Surgeon) - Parnasree, Kolkata
                 </span>
               </h1>
               <p className="text-xl text-slate-600 mb-8">
-                Welcome to our state-of-the-art veterinary facility in Parnasree. As the leading animal hospital in this part of South Kolkata, we offer a complete suite of services, from advanced diagnostics and surgery to professional pet grooming and boarding.
+                Welcome to our state-of-the-art veterinary clinic in Parnasree, serving pet owners in Behala, Thakurpukur, and surrounding South Kolkata areas. We offer comprehensive veterinary care including advanced diagnostics, professional pet grooming, safe boarding facilities, and 24/7 emergency services.
               </p>
 
               <div className="space-y-4 mb-8">
@@ -151,7 +212,7 @@ const ParnasreePalliPage = () => {
                 <div className="flex items-center space-x-3">
                   <Clock className="h-5 w-5 text-blue-600" />
                   <span className="text-slate-700">
-                    Daily 10:00 AM - 10:00 PM
+                    Daily 10:00 AM - 10:00 PM | 24/7 Emergency Services
                   </span>
                 </div>
                 <div className="flex items-center space-x-3">
@@ -188,10 +249,9 @@ const ParnasreePalliPage = () => {
             <div className="relative">
               <div className="absolute -inset-4 bg-gradient-to-r from-purple-400 to-pink-400 rounded-2xl blur-xl opacity-30"></div>
               <div className="relative bg-white p-6 rounded-2xl shadow-2xl">
-
                 <Image
                   src="/images/hero-veterinary.webp"
-                  alt="Parnasree Veterinary Clinic"
+                  alt="Dr. Selim Sk's Veterinary Clinic in Parnasree, Kolkata - Modern pet care facility"
                   width={400}
                   height={320}
                   className="w-full h-80 object-cover rounded-lg"
@@ -199,10 +259,10 @@ const ParnasreePalliPage = () => {
                 />
                 <div className="mt-4 text-center">
                   <h3 className="text-lg font-bold text-slate-900">
-                    Full-Service Facility
+                    Full-Service Veterinary Facility
                   </h3>
                   <p className="text-slate-600">
-                    Complete pet care under one roof
+                    Complete pet care under one roof in Parnasree
                   </p>
                 </div>
               </div>
@@ -211,11 +271,11 @@ const ParnasreePalliPage = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+      {/* Our Veterinary Services in Parnasree */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
-            Services Available at Parnasree
+            Our Veterinary Services in Parnasree
           </h2>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -237,18 +297,85 @@ const ParnasreePalliPage = () => {
         </div>
       </section>
 
-      {/* Facilities Showcase */}
+      {/* Meet Dr. Selim Sk - Your Local Veterinarian */}
       <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
-            Modern Facilities
+            Meet Dr. Selim Sk - Your Local Veterinarian
+          </h2>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <Image
+                  src="/images/dr-selim-profile.webp"
+                  alt="Dr. Selim Sk - Veterinary Doctor & Surgeon at Parnasree clinic"
+                  width={400}
+                  height={300}
+                  className="w-full h-64 object-cover rounded-lg mb-6"
+                />
+                <div className="text-center">
+                  <h3 className="text-xl font-bold text-slate-900 mb-2">
+                    Dr. Selim Sk
+                  </h3>
+                  <p className="text-slate-600 mb-4">Veterinary Doctor & Surgeon</p>
+                  <div className="flex justify-center mb-4">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                    ))}
+                  </div>
+                  <p className="text-slate-600 text-sm">
+                    BVSc & AH Graduate with 3+ years of specialized experience
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              <div>
+                <h3 className="text-2xl font-bold text-slate-900 mb-4">
+                  Experienced Veterinary Care in Parnasree
+                </h3>
+                <p className="text-slate-600 mb-6">
+                  Dr. Selim Sk brings years of dedicated experience in veterinary medicine to the Parnasree community. As a qualified Veterinary Doctor & Surgeon, he specializes in comprehensive pet healthcare, from routine wellness exams to complex surgical procedures.
+                </p>
+              </div>
+
+              <div className="grid sm:grid-cols-2 gap-4">
+                {[
+                  { icon: Shield, title: "3+ Years Experience", desc: "Proven expertise in veterinary care" },
+                  { icon: Heart, title: "Compassionate Care", desc: "Gentle approach with all animals" },
+                  { icon: Users, title: "1000+ Happy Clients", desc: "Trusted by pet families" },
+                  { icon: Clock, title: "24/7 Emergency", desc: "Always available when needed" }
+                ].map((item, index) => (
+                  <div key={index} className="bg-white p-4 rounded-lg shadow-sm">
+                    <div className="flex items-center space-x-3 mb-2">
+                      <div className="bg-purple-100 p-2 rounded-lg">
+                        <item.icon className="h-4 w-4 text-purple-600" />
+                      </div>
+                      <h4 className="font-semibold text-slate-900">{item.title}</h4>
+                    </div>
+                    <p className="text-slate-600 text-sm">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Modern Pet Clinic Facilities */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+            Modern Pet Clinic Facilities
           </h2>
 
           <div className="grid md:grid-cols-2 gap-8">
             {facilities.map((facility, index) => (
               <div
                 key={index}
-                className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-200"
+                className="bg-slate-50 p-8 rounded-2xl hover:shadow-lg transition-shadow duration-200"
               >
                 <div className="flex items-start space-x-4">
                   <div className="bg-gradient-to-r from-purple-500 to-pink-500 p-3 rounded-lg">
@@ -264,17 +391,57 @@ const ParnasreePalliPage = () => {
               </div>
             ))}
           </div>
+
+          <div className="mt-12 bg-gradient-to-r from-purple-100 to-pink-100 p-8 rounded-2xl">
+            <h3 className="text-2xl font-bold text-slate-900 text-center mb-6">
+              Why Choose Our Parnasree Clinic?
+            </h3>
+            <div className="grid md:grid-cols-3 gap-6">
+              {specialFeatures.map((feature, index) => (
+                <div key={index} className="flex items-center space-x-3">
+                  <CheckCircle className="h-5 w-5 text-purple-600 flex-shrink-0" />
+                  <span className="text-slate-700">{feature}</span>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
-      {/* Location Details */}
+      {/* Frequently Asked Questions */}
+      <section className="py-20 bg-slate-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+          
+          <div className="max-w-4xl mx-auto space-y-6">
+            {faqs.map((faq, index) => (
+              <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
+                <h3 className="text-lg font-bold text-slate-900 mb-3">
+                  {faq.question}
+                </h3>
+                <p className="text-slate-600">
+                  {faq.answer}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Find Our Parnasree Vet Clinic */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
+            Find Our Parnasree Vet Clinic
+          </h2>
+
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Transportation */}
             <div className="bg-slate-50 p-8 rounded-2xl">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">
-                How to Reach
+                How to Reach Our Clinic
               </h3>
 
               <div className="space-y-6">
@@ -297,16 +464,21 @@ const ParnasreePalliPage = () => {
 
               <div className="mt-8 p-4 bg-purple-50 rounded-lg">
                 <h4 className="font-semibold text-slate-900 mb-2">
-                  Convenient Location
+                  Plus Code Location
+                </h4>
+                <p className="text-sm text-slate-600 mb-2">
+                  {locationDetails.plusCode} - Use this code for precise navigation
+                </p>
+                <h4 className="font-semibold text-slate-900 mb-2">
+                  Parking Available
                 </h4>
                 <p className="text-sm text-slate-600">
-                  Easily accessible from Behala, Thakurpukur, and Joka areas
-                  with ample parking space.
+                  Ample parking space available for cars and two-wheelers at our Kalimata Colony Road location.
                 </p>
               </div>
             </div>
 
-            {/* Landmarks & Features */}
+            {/* Location Details */}
             <div className="bg-slate-50 p-8 rounded-2xl">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">
                 Location Highlights
@@ -324,44 +496,15 @@ const ParnasreePalliPage = () => {
                 ))}
               </div>
 
-              <div className="space-y-3">
-                <h4 className="font-semibold text-slate-900">
-                  Special Features
+              <div className="bg-white p-6 rounded-lg">
+                <h4 className="font-semibold text-slate-900 mb-4">
+                  Complete Address
                 </h4>
-                {specialFeatures.map((feature, index) => (
-                  <div key={index} className="flex items-center space-x-3">
-                    <CheckCircle className="w-4 h-4 text-purple-500" />
-                    <span className="text-slate-700 text-sm">{feature}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Contact Information */}
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="bg-gradient-to-r from-slate-50 to-purple-50 rounded-2xl p-8">
-            <h2 className="text-3xl font-bold text-slate-900 text-center mb-8">
-              Contact Information
-            </h2>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-slate-900">Business Details</h3>
-                <div className="space-y-3">
-                  <div>
-                    <h4 className="font-semibold text-slate-700">Business Name</h4>
-                    <p className="text-slate-600">{locationDetails.businessName}</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-700">Complete Address</h4>
-                    <p className="text-slate-600">{locationDetails.address}</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-700">Phone Number</h4>
+                <p className="text-slate-600 mb-4">{locationDetails.address}</p>
+                
+                <div className="space-y-2">
+                  <div className="flex items-center space-x-3">
+                    <Phone className="h-4 w-4 text-orange-600" />
                     <a
                       href={`tel:${locationDetails.phoneNumber}`}
                       className="text-orange-600 hover:text-orange-700 font-medium"
@@ -369,25 +512,9 @@ const ParnasreePalliPage = () => {
                       {locationDetails.phoneNumber}
                     </a>
                   </div>
-                </div>
-              </div>
-              
-              <div className="space-y-4">
-                <h3 className="text-xl font-bold text-slate-900">Location Details</h3>
-                <div className="space-y-3">
-                  <div>
-                    <h4 className="font-semibold text-slate-700">Postal Code</h4>
-                    <p className="text-slate-600">{locationDetails.postalCode}</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-700">Region</h4>
-                    <p className="text-slate-600">{locationDetails.addressRegion}</p>
-                  </div>
-                  <div>
-                    <h4 className="font-semibold text-slate-700">Coordinates</h4>
-                    <p className="text-slate-600">
-                      {locationDetails.geoCoordinates.latitude}, {locationDetails.geoCoordinates.longitude}
-                    </p>
+                  <div className="flex items-center space-x-3">
+                    <Clock className="h-4 w-4 text-blue-600" />
+                    <span className="text-slate-600 text-sm">Daily 10:00 AM - 10:00 PM</span>
                   </div>
                 </div>
               </div>
@@ -396,40 +523,60 @@ const ParnasreePalliPage = () => {
         </div>
       </section>
 
-      {/* FAQ Section */}
-      <section className="py-20 bg-white">
+      {/* What Our Clients Say */}
+      <section className="py-20 bg-gradient-to-br from-slate-900 to-slate-800 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
-            Frequently Asked Questions
+          <h2 className="text-3xl font-bold text-center mb-12">
+            What Our Clients Say
           </h2>
-          
-          <div className="max-w-4xl mx-auto space-y-8">
-            <div className="bg-slate-50 p-6 rounded-lg">
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
-                What makes the Parnasree clinic different?
-              </h3>
-              <p className="text-slate-600">
-                Our Parnasree location is a full-service animal hospital with advanced facilities, including an in-house diagnostic lab, a modern surgical suite, and dedicated pet grooming and boarding areas.
-              </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="bg-slate-800 p-6 rounded-xl border border-slate-700">
+                <div className="flex items-center mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
+                  ))}
+                </div>
+                <blockquote className="text-slate-300 mb-4">
+                  "{testimonial.text}"
+                </blockquote>
+                <cite className="text-cyan-400 font-semibold">
+                  - {testimonial.name}, {testimonial.location}
+                </cite>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="inline-flex items-center space-x-6 bg-slate-800 px-8 py-6 rounded-2xl">
+              <div className="text-center">
+                <div className="text-3xl font-bold text-cyan-400">4.9</div>
+                <div className="text-slate-400 text-sm">Average Rating</div>
+              </div>
+              <div className="w-px h-12 bg-slate-700"></div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-green-400">1000+</div>
+                <div className="text-slate-400 text-sm">Happy Clients</div>
+              </div>
+              <div className="w-px h-12 bg-slate-700"></div>
+              <div className="text-center">
+                <div className="text-3xl font-bold text-orange-400">24/7</div>
+                <div className="text-slate-400 text-sm">Emergency Care</div>
+              </div>
             </div>
-            
-            <div className="bg-slate-50 p-6 rounded-lg">
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
-                Which areas do you serve from this location?
-              </h3>
-              <p className="text-slate-600">
-                We proudly serve Parnasree, Behala, Thakurpukur, Joka, and the surrounding South Kolkata neighborhoods.
-              </p>
-            </div>
-            
-            <div className="bg-slate-50 p-6 rounded-lg">
-              <h3 className="text-lg font-bold text-slate-900 mb-3">
-                How can I book a grooming appointment?
-              </h3>
-              <p className="text-slate-600">
-                You can book a pet grooming appointment by calling us directly at <a href={`tel:${locationDetails.phoneNumber}`} className="text-orange-600 hover:text-orange-700 font-medium">{locationDetails.phoneNumber}</a>. We recommend booking in advance.
-              </p>
-            </div>
+          </div>
+
+          <div className="text-center mt-8">
+            <a
+              href="https://www.google.com/search?q=Dr.+Selim+Sk+Veterinary+Doctor+Surgeon+Parnasree+reviews"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+            >
+              <Star className="h-5 w-5" />
+              <span>Find us on Google</span>
+            </a>
           </div>
         </div>
       </section>
@@ -438,11 +585,10 @@ const ParnasreePalliPage = () => {
       <section className="py-20 bg-gradient-to-r from-purple-600 to-pink-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">
-            Visit Our Parnasree Palli Location
+            Visit Our Parnasree Veterinary Clinic
           </h2>
           <p className="text-xl mb-8 text-purple-100">
-            Complete veterinary care with modern facilities including
-            diagnostics, grooming, and boarding
+            Expert veterinary care with modern facilities including diagnostics, grooming, and boarding. Serving Parnasree, Behala, Thakurpukur, and surrounding areas.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -454,7 +600,7 @@ const ParnasreePalliPage = () => {
               <span>Call: {locationDetails.phoneNumber}</span>
             </a>
             <a
-              href={`https://wa.me/${locationDetails.phoneNumber.replace('+', '')}?text=Hello%20Dr.%20Selim%20Sk,%20I%20need%20consultation%20at%20Parnasree%20Palli%20location`}
+              href={`https://wa.me/${locationDetails.phoneNumber.replace('+', '')}?text=Hello%20Dr.%20Selim%20Sk,%20I%20need%20consultation%20at%20Parnasree%20clinic`}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg"
@@ -465,8 +611,7 @@ const ParnasreePalliPage = () => {
 
           <div className="mt-8 text-purple-100">
             <p>
-              Located on Kalimata Colony Road • Near Parnasree Club •
-              Full-service facility
+              Located on Kalimata Colony Road • Near Parnasree Club • Plus Code: {locationDetails.plusCode}
             </p>
           </div>
         </div>
@@ -478,24 +623,24 @@ const ParnasreePalliPage = () => {
           __html: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "VeterinaryCare",
-            "name": locationDetails.businessName,
+            "name": "Dr. Selim Sk (Veterinary Doctor & Surgeon)",
             "image": "https://www.drselimsk.com/images/hero-veterinary.webp",
-            "@id": locationDetails.websiteUrl,
-            "url": locationDetails.websiteUrl,
-            "telephone": locationDetails.phoneNumber,
+            "@id": "https://www.drselimsk.com/locations/parnasree",
+            "url": "https://www.drselimsk.com/locations/parnasree",
+            "telephone": "+916291630297",
             "priceRange": "$$",
             "address": {
               "@type": "PostalAddress",
-              "streetAddress": locationDetails.streetAddress,
-              "addressLocality": locationDetails.addressLocality,
-              "postalCode": locationDetails.postalCode,
-              "addressRegion": locationDetails.addressRegion,
-              "addressCountry": locationDetails.addressCountry
+              "streetAddress": "58, Kalimata Colony Rd",
+              "addressLocality": "Parnasree Palli, Kolkata",
+              "postalCode": "700060",
+              "addressRegion": "WB",
+              "addressCountry": "IN"
             },
             "geo": {
               "@type": "GeoCoordinates",
-              "latitude": locationDetails.geoCoordinates.latitude.toString(),
-              "longitude": locationDetails.geoCoordinates.longitude.toString()
+              "latitude": "22.502578",
+              "longitude": "88.301167"
             },
             "openingHoursSpecification": {
               "@type": "OpeningHoursSpecification",
@@ -511,7 +656,13 @@ const ParnasreePalliPage = () => {
               "opens": "10:00",
               "closes": "22:00"
             },
-            "areaServed": ["Parnasree", "Behala", "Thakurpukur", "Joka", "South Kolkata"],
+            "areaServed": [
+              "Parnasree",
+              "Behala", 
+              "Thakurpukur",
+              "Joka",
+              "South Kolkata"
+            ],
             "additionalProperty": [
               {
                 "@type": "PropertyValue",
@@ -527,8 +678,19 @@ const ParnasreePalliPage = () => {
                 "@type": "PropertyValue",
                 "name": "Diagnostic Lab",
                 "value": "In-house pathology and radiology services"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Emergency Services",
+                "value": "24/7 emergency care available"
+              },
+              {
+                "@type": "PropertyValue",
+                "name": "Plus Code",
+                "value": "G852+2F"
               }
-            ]
+            ],
+            "hasMap": "https://maps.app.goo.gl/RFjVhRT4btQzLtwK7"
           })
         }}
       />
