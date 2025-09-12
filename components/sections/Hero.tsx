@@ -44,7 +44,7 @@ const Hero = () => {
           >
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-                <span className="block transition-all duration-500">
+                <span className="block transition-all duration-500 min-h-[3.5rem] sm:min-h-[4rem] lg:min-h-[5rem] flex items-center">
                   {texts[currentText]}
                 </span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600 mt-2">

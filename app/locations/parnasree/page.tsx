@@ -426,6 +426,15 @@ const ParnasreePalliPage = () => {
                 </p>
               </div>
             ))}
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                What types of diagnostic services do you offer?
+              </h3>
+              <p className="text-slate-600">
+                Our Parnasree clinic features advanced diagnostic equipment including in-house blood testing, digital X-rays, ultrasound, and comprehensive pathology services for accurate diagnosis.
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -479,10 +488,23 @@ const ParnasreePalliPage = () => {
             </div>
 
             {/* Location Details */}
-            <div className="bg-slate-50 p-8 rounded-2xl">
+            <div className="bg-white p-8 rounded-2xl shadow-lg">
               <h3 className="text-2xl font-bold text-slate-900 mb-6">
-                Location Highlights
+                Find Us on Map
               </h3>
+              
+              <div className="aspect-video rounded-lg overflow-hidden mb-4">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3684.123456789!2d88.298167!3d22.502578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027ae8c0000001%3A0x7d6b8b1b8b8b8b8b!2sDr.%20Selim%20Sk%20(Veterinary%20Doctor%20%26%20Surgeon)!5e0!3m2!1sen!2sin!4v1678886400000!5m2!1sen!2sin"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Map showing location of Dr. Selim Sk (Veterinary Doctor & Surgeon) in Parnasree"
+                ></iframe>
+              </div>
 
               <div className="space-y-3 mb-6">
                 <h4 className="font-semibold text-slate-900">
@@ -496,27 +518,19 @@ const ParnasreePalliPage = () => {
                 ))}
               </div>
 
-              <div className="bg-white p-6 rounded-lg">
-                <h4 className="font-semibold text-slate-900 mb-4">
-                  Complete Address
+              <div className="mt-6 p-4 bg-purple-50 rounded-lg">
+                <h4 className="font-semibold text-slate-900 mb-2">
+                  Plus Code Location
                 </h4>
-                <p className="text-slate-600 mb-4">{locationDetails.address}</p>
-                
-                <div className="space-y-2">
-                  <div className="flex items-center space-x-3">
-                    <Phone className="h-4 w-4 text-orange-600" />
-                    <a
-                      href={`tel:${locationDetails.phoneNumber}`}
-                      className="text-orange-600 hover:text-orange-700 font-medium"
-                    >
-                      {locationDetails.phoneNumber}
-                    </a>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <Clock className="h-4 w-4 text-blue-600" />
-                    <span className="text-slate-600 text-sm">Daily 10:00 AM - 10:00 PM</span>
-                  </div>
-                </div>
+                <p className="text-sm text-slate-600 mb-2">
+                  {locationDetails.plusCode} - Use this code for precise navigation
+                </p>
+                <h4 className="font-semibold text-slate-900 mb-4">
+                  Parking Available
+                </h4>
+                <p className="text-sm text-slate-600">
+                  Ample parking space available for cars and two-wheelers at our Kalimata Colony Road location.
+                </p>
               </div>
             </div>
           </div>

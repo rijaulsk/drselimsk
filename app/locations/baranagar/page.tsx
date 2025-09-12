@@ -256,7 +256,7 @@ const BaranagarPage = () => {
               
               <div className="aspect-video rounded-lg overflow-hidden mb-4">
                 <iframe
-                  src={`https://www.google.com/maps/embed/v1/place?key=AIzaSyBFw0Qbyq9zTFTd-tUY6dO4X0VdPOhOOOI&q=${encodeURIComponent(locationDetails.plusCode + ' ' + locationDetails.businessName)}&zoom=16`}
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d235668.86200693302!2d88.0696047!3d22.641632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39f89d007814382d%3A0xe1dcd3431694b948!2sDr.%20Selim%20SK%20(VETERINARY%20DOCTOR%20%26%20SURGEON)!5e0!3m2!1sen!2sin!4v1756927513578!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -358,6 +358,24 @@ const BaranagarPage = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-lg font-bold text-slate-900 mb-3">
+                What are your clinic hours at the Baranagar location?
+              </h3>
+              <p className="text-slate-600">
+                Our Baranagar clinic is open daily from 10:00 AM to 10:00 PM. We also provide 24/7 emergency services for urgent pet care needs.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                Do you provide home visit services in North Kolkata?
+              </h3>
+              <p className="text-slate-600">
+                Yes, we offer comprehensive home visit services throughout North Kolkata including Baranagar, Dum Dum, Sodepur, and surrounding areas. This is especially beneficial for pets who get stressed during travel.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
                 Where exactly is Dr. Selim SK's Baranagar clinic located?
               </h3>
               <p className="text-slate-600">
@@ -371,6 +389,15 @@ const BaranagarPage = () => {
               </h3>
               <p className="text-slate-600">
                 Yes, we offer 24/7 emergency services at our Baranagar clinic. If your pet needs urgent care in North Kolkata, please call us immediately at <a href={`tel:${locationDetails.phoneNumber}`} className="text-orange-600 hover:text-orange-700 font-medium">{locationDetails.phoneNumber}</a>.
+              </p>
+            </div>
+            
+            <div className="bg-white p-6 rounded-lg shadow-sm">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                What types of animals do you treat at the Baranagar clinic?
+              </h3>
+              <p className="text-slate-600">
+                We provide comprehensive care for dogs, cats, birds, small animals (rabbits, guinea pigs), and can also handle emergency care for other pets. Dr. Selim has multi-species expertise.
               </p>
             </div>
             

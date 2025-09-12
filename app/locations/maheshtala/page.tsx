@@ -261,7 +261,7 @@ const MaheshtalePage = () => {
               
               <div className="aspect-video rounded-lg overflow-hidden mb-4">
                 <iframe
-                  src={locationDetails.gmbUrl}
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3686.092721118671!2d88.2708354149582!3d22.49984688521946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a0279e8c0000001%3A0x7d6b8b1b8b8b8b8b!2sDr.%20SELIM%20SK%20(VETERINARY%20DOCTOR)!5e0!3m2!1sen!2sin!4v1678886400000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
@@ -393,6 +393,24 @@ const MaheshtalePage = () => {
           <div className="max-w-4xl mx-auto space-y-8">
             <div className="bg-slate-50 p-6 rounded-lg">
               <h3 className="text-lg font-bold text-slate-900 mb-3">
+                What are your clinic hours at the Maheshtala location?
+              </h3>
+              <p className="text-slate-600">
+                Our Maheshtala clinic is open daily from 10:00 AM to 10:00 PM. Emergency services are available 24/7 for urgent pet care needs.
+              </p>
+            </div>
+            
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                Do you provide home visit services in South Kolkata?
+              </h3>
+              <p className="text-slate-600">
+                Yes, we offer extensive home visit services throughout South Kolkata including Maheshtala, Pujali, Sankrail, and surrounding rural areas. This is particularly beneficial for large animals and farm animals.
+              </p>
+            </div>
+            
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
                 Where exactly is Dr. SELIM SK's Maheshtala clinic located?
               </h3>
               <p className="text-slate-600">
@@ -406,6 +424,15 @@ const MaheshtalePage = () => {
               </h3>
               <p className="text-slate-600">
                 Yes, our Maheshtala clinic specializes in large animal care. Dr. SELIM SK has extensive experience treating farm and rural animals.
+              </p>
+            </div>
+            
+            <div className="bg-slate-50 p-6 rounded-lg">
+              <h3 className="text-lg font-bold text-slate-900 mb-3">
+                Do you offer emergency services for large animals?
+              </h3>
+              <p className="text-slate-600">
+                Yes, we provide 24/7 emergency response for both pets and large animals. Our team is equipped to handle farm animal emergencies throughout the South Kolkata rural belt.
               </p>
             </div>
             
