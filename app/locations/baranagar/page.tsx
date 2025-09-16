@@ -208,74 +208,9 @@ const BaranagarPage = () => {
           </div>
         </div>
       </section>
-      <section className="py-20 bg-slate-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-slate-900 text-center mb-12">
-            Meet Dr. Selim SK - Your Local Veterinarian
-          </h2>
-
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <div className="bg-white p-8 rounded-2xl shadow-lg">
-                <Image
-                  src="/images/dr-selim-profile.webp"
-                  alt="Dr. Selim SK - Veterinary Doctor & Surgeon at Baranagar clinic"
-                  width={400}
-                  height={300}
-                  className="w-full h-64 object-cover rounded-lg mb-6"
-                />
-                <div className="text-center">
-                  <h3 className="text-xl font-bold text-slate-900 mb-2">
-                    Dr. Selim SK
-                  </h3>
-                  <p className="text-slate-600 mb-4">Veterinary Doctor & Surgeon</p>
-                  <div className="flex justify-center mb-4">
-                    {[...Array(5)].map((_, i) => (
-                      <Star key={i} className="h-4 w-4 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <p className="text-slate-600 text-sm">
-                    BVSc & AH Graduate with 3+ years of specialized experience
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold text-slate-900 mb-4">
-                  Experienced Veterinary Care in Baranagar
-                </h3>
-                <p className="text-slate-600 mb-6">
-                  Dr. Selim SK brings years of dedicated experience in veterinary medicine to the Baranagar community. As a qualified Veterinary Doctor & Surgeon, he specializes in comprehensive pet healthcare, from routine wellness exams to complex surgical procedures.
-                </p>
-              </div>
-
-              <div className="grid sm:grid-cols-2 gap-4">
-                {[
-                  { icon: Shield, title: "3+ Years Experience", desc: "Proven expertise in veterinary care" },
-                  { icon: Heart, title: "Compassionate Care", desc: "Gentle approach with all animals" },
-                  { icon: Users, title: "1000+ Happy Clients", desc: "Trusted by pet families" },
-                  { icon: Clock, title: "24/7 Emergency", desc: "Always available when needed" }
-                ].map((item, index) => (
-                  <div key={index} className="bg-white p-4 rounded-lg shadow-sm">
-                    <div className="flex items-center space-x-3 mb-2">
-                      <div className="bg-blue-100 p-2 rounded-lg">
-                        <item.icon className="h-4 w-4 text-blue-600" />
-                      </div>
-                      <h4 className="font-semibold text-slate-900">{item.title}</h4>
-                    </div>
-                    <p className="text-slate-600 text-sm">{item.desc}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Location Details */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-slate-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Transportation */}
@@ -492,7 +427,7 @@ const BaranagarPage = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href={`tel:${locationDetails.phoneNumber}`}
-              className="bg-gradient-to-r from-orange-400 to-orange-500 hover:from-orange-500 hover:to-orange-600 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
+              className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-all duration-200 transform hover:scale-105 shadow-lg flex items-center justify-center space-x-2"
             >
               <Phone className="h-5 w-5" />
               <span>Call: {locationDetails.phoneNumber}</span>

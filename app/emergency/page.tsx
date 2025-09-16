@@ -310,7 +310,7 @@ const EmergencyPage = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <a
               href="tel:+916291630297"
-              className="bg-white text-red-500 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-red-50 transition-all duration-200 transform hover:scale-105 shadow-2xl flex items-center space-x-3"
+              className="bg-white text-red-600 px-10 py-5 rounded-2xl font-bold text-xl hover:bg-red-50 transition-all duration-200 transform hover:scale-105 shadow-2xl flex items-center space-x-3"
             >
               <Phone className="h-7 w-7 animate-pulse" />
               <span>Call Emergency: +91 6291630297</span>

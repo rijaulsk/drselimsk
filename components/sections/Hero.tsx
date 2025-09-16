@@ -44,7 +44,7 @@ const Hero = () => {
           >
             <div className="space-y-4">
               <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-slate-900 leading-tight">
-                <span className="block transition-all duration-500 h-[7rem] sm:h-[8rem] lg:h-[10rem] flex items-center justify-center text-center">
+                <span className="block transition-all duration-500 min-h-[3.5rem] sm:min-h-[4rem] lg:min-h-[5rem] flex items-center">
                   {texts[currentText]}
                 </span>
                 <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600 mt-2">
@@ -98,7 +98,7 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4">
               <a
                 href="tel:+916291630297"
-                className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-400 to-orange-500 text-white font-semibold rounded-lg hover:from-orange-500 hover:to-orange-600 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
+                className="group inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white font-semibold rounded-lg hover:from-orange-600 hover:to-orange-700 transform hover:scale-105 transition-all duration-200 shadow-lg hover:shadow-xl"
               >
                 <Phone className="h-5 w-5 mr-2 group-hover:animate-pulse" />
                 Emergency Call
