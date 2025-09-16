@@ -27,7 +27,7 @@ const FloatingContacts = () => {
         <div className={`transition-all duration-300 ${isExpanded ? 'translate-y-0 opacity-100' : 'translate-x-8 opacity-0 pointer-events-none'} mb-3`}>
           <a
             href="tel:+916291630297"
-            className="flex items-center space-x-3 bg-orange-500 hover:bg-orange-600 text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
+            className="flex items-center space-x-3 bg-orange-400 hover:bg-orange-500 text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl transition-all duration-200 transform hover:scale-105"
           >
             <Phone className="h-5 w-5" />
             <span className="font-medium">Call Now</span>
