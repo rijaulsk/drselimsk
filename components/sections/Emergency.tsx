@@ -78,7 +78,7 @@ const Emergency = () => {
                 <h3 className="text-3xl font-bold mb-4">Emergency Contact</h3>
                 <a
                   href="tel:+916291630297"
-                  className="text-4xl font-bold text-yellow-300 hover:text-yellow-200 transition-colors duration-200 block mb-4"
+                  className="inline-flex items-center space-x-3 bg-gradient-to-r from-red-500 to-red-600 text-white px-8 py-4 rounded-lg font-bold text-lg hover:from-red-600 hover:to-red-700 transition-all duration-200 transform hover:scale-105 shadow-lg"
                 >
                   +91 6291630297
                 </a>

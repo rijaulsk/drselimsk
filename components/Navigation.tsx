@@ -88,7 +88,7 @@ const Navigation = () => {
 
       {/* Mobile Navigation */}
       {isOpen && (
-        <div className="md:hidden bg-white border-t border-slate-200 shadow-lg">
+        <div className="lg:hidden bg-white border-t border-slate-200 shadow-lg">
           <div className="px-4 py-2 space-y-1">
             {navigation.map((item) => (
               <Link
@@ -106,7 +106,7 @@ const Navigation = () => {
             ))}
             <a
               href="tel:+916291630297"
-              className="block w-full mt-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-4 py-3 rounded-lg font-semibold text-center hover:from-orange-600 hover:to-orange-700 transition-all duration-200"
+              className="block w-full mt-4 bg-gradient-to-r from-orange-400 to-orange-500 text-white px-4 py-3 rounded-lg font-semibold text-center hover:from-orange-500 hover:to-orange-600 transition-all duration-200"
               onClick={() => setIsOpen(false)}
             >
               <Phone className="h-4 w-4 inline mr-2" />
