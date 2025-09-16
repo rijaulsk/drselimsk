@@ -53,7 +53,7 @@ export default function RootLayout({
               "description": "Expert veterinary services with 24/7 emergency care",
               "url": "https://drselimsk.com",
               "telephone": "+916291630297",
-              "email": "mstgunahar@gmail.com",
+              "email": "contact@drselimsk.com",
               "address": [
                 {
                   "@type": "PostalAddress",
