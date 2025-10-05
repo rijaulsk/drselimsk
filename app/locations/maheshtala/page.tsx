@@ -411,7 +411,7 @@ const MaheshtalePage = () => {
             
             <div className="bg-slate-50 p-6 rounded-lg">
               <h3 className="text-lg font-bold text-slate-900 mb-3">
-                Where exactly is Dr. SELIM SK's Maheshtala clinic located?
+                Where exactly is Dr. SELIM SK&apos;s Maheshtala clinic located?
               </h3>
               <p className="text-slate-600">
                 Our clinic is located at {locationDetails.fullAddress}. You can find us easily near Nangi Railway Station.
