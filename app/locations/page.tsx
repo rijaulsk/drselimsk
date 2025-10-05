@@ -24,7 +24,7 @@ const LocationsPage = () => {
       name: "Baranagar Clinic",
       address: "J9RF+MQ5, Gopal Lal Tagore Rd, Neogipara, Joyshree, Ashokgarh, Baranagar, West Bengal 700035",
       shortAddress: "Baranagar, West Bengal 700035",
-      time: "Online Consultation 24/7 Available",
+      time: "Online Consultation Available",
       slug: "baranagar",
       mapUrl: "https://maps.app.goo.gl/73JM5BbWbpVeeVqH9",
       color: "from-indigo-500 via-blue-500 to-cyan-500",
@@ -62,7 +62,7 @@ const LocationsPage = () => {
     {
       icon: Clock,
       title: "Consistent Hours",
-      description: "Daily 10:00 AM - 10:00 PM & 24/7 online consultations"
+      description: "Daily 10:00 AM - 10:00 PM & online consultations"
     },
     {
       icon: Phone,
@@ -255,8 +255,8 @@ const LocationsPage = () => {
                   <div className="text-4xl font-bold text-cyan-600 mb-2">3</div>
                   <div className="text-slate-700 mb-4">Strategic Locations</div>
                   
-                  <div className="text-3xl font-bold text-green-600 mb-2">24/7</div>
-                  <div className="text-slate-700 mb-4">Emergency Coverage</div>
+                  <div className="text-3xl font-bold text-green-600 mb-2">200+</div>
+                  <div className="text-slate-700 mb-4">Successful Surgeries</div>
                   
                   <div className="text-3xl font-bold text-orange-600 mb-2">100%</div>
                   <div className="text-slate-700">Kolkata Coverage</div>
@@ -272,7 +272,7 @@ const LocationsPage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Emergency Services at All Locations</h2>
           <p className="text-xl mb-8 text-cyan-100">
-            Dr. Selim is available 24/7 for emergency care at any of our three locations
+            Dr. Selim is available for emergency care at any of our three locations
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

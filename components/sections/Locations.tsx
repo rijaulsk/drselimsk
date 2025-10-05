@@ -30,7 +30,7 @@ const Locations = () => {
       name: "Baranagar Clinic",
       address: "J9RF+MQ5, Gopal Lal Tagore Rd, Neogipara, Joyshree, Ashokgarh, Baranagar, West Bengal 700035",
       shortAddress: "Baranagar, West Bengal 700035",
-      time: "Online Consultation 24/7 Available",
+      time: "Saturday and Online Consultation",
       slug: "baranagar",
       mapUrl: "https://maps.app.goo.gl/73JM5BbWbpVeeVqH9",
       color: "from-indigo-500 via-blue-500 to-cyan-500"
@@ -170,8 +170,8 @@ const Locations = () => {
               </div>
               <div className="text-center">
                 <div className="bg-white p-4 rounded-lg shadow-sm mb-3">
-                  <div className="text-2xl font-bold text-cyan-600">24/7</div>
-                  <div className="text-sm text-slate-600">Emergency Care</div>
+                  <div className="text-2xl font-bold text-cyan-600">Emergency Care</div>
+                  <div className="text-sm text-slate-600">Support & Visits</div>
                 </div>
               </div>
             </div>
@@ -182,7 +182,7 @@ const Locations = () => {
             <div className="inline-flex items-center space-x-6 bg-gradient-to-r from-orange-500 to-orange-600 text-white px-8 py-4 rounded-2xl shadow-lg">
               <div>
                 <div className="text-sm opacity-90">Emergency Services</div>
-                <div className="text-lg font-bold">Available 24/7 at all locations</div>
+                <div className="text-lg font-bold">Service available at all locations</div>
               </div>
               <a
                 href="tel:+916291630297"

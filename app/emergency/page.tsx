@@ -13,9 +13,9 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: '24/7 Emergency Veterinary Services - Dr. Selim SK | Kolkata Pet Emergency Care',
-  description: 'Emergency veterinary care available 24/7 across Kolkata. Call +91 6291630297 for immediate pet emergency response. Home visits and critical care services.',
-  keywords: 'emergency vet Kolkata, 24/7 pet emergency, emergency veterinary care, pet emergency services, veterinary emergency response',
+  title: 'Emergency Veterinary Services - Dr. Selim SK | Kolkata Pet Emergency Care',
+  description: 'Emergency veterinary care available across Kolkata. Call +91 6291630297 for immediate pet emergency response. Home visits and critical care services.',
+  keywords: 'emergency vet Kolkata, urgent pet emergency, emergency veterinary care, pet emergency services, veterinary emergency response',
 };
 
 const EmergencyPage = () => {
@@ -29,7 +29,7 @@ const EmergencyPage = () => {
     {
       icon: Heart,
       title: "Surgical Emergencies",
-      description: "Immediate surgical interventions available 24/7 for life-threatening conditions",
+      description: "Immediate surgical interventions available for life-threatening conditions",
       features: ["Emergency surgery", "Post-operative monitoring", "Advanced anesthesia"]
     },
     {
@@ -131,7 +131,7 @@ const EmergencyPage = () => {
               <AlertTriangle className="h-10 w-10 text-red-600 animate-pulse" />
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">24/7 Emergency</span> Veterinary Services
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Emergency Care</span> Veterinary Services
             </h1>
             <p className="text-xl text-slate-700 max-w-3xl mx-auto mb-8">
               Pet emergencies don&apos;t wait for business hours. Dr. Selim provides round-the-clock emergency services when you need them most.
@@ -150,10 +150,10 @@ const EmergencyPage = () => {
                 >
                   +91 6291630297
                 </a>
-                <p className="text-red-100 mb-4">Available 24/7 for genuine emergencies</p>
+                <p className="text-red-100 mb-4">Available for genuine emergencies</p>
                 <div className="flex items-center justify-center space-x-2 text-red-100">
                   <Clock className="h-5 w-5" />
-                  <span>Always Available • Immediate Response</span>
+                  <span>Available in Need • Immediate Response</span>
                 </div>
               </div>
             </div>
@@ -327,7 +327,7 @@ const EmergencyPage = () => {
           </div>
 
           <div className="mt-8 text-red-100">
-            <p className="text-lg">Available 24/7 • Immediate Response • Home Visits Available</p>
+            <p className="text-lg">Available in Need • Immediate Response • Home Visits Available</p>
           </div>
         </div>
       </section>

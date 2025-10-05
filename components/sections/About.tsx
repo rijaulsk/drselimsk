@@ -52,7 +52,7 @@ const About = () => {
   ];
 
   const specialties = [
-    "Emergency Care Available 24/7",
+    "Emergency Care Available",
     "Home Visit Services",
     "Affordable Treatment",
     "Multi-species Expertise",
@@ -123,14 +123,10 @@ const About = () => {
 
           {/* Professional Stats */}
           <div className="mt-16 bg-gradient-to-r from-cyan-600 to-teal-600 rounded-2xl p-8 text-white">
-            <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">1000+</div>
                 <div className="text-cyan-100">Pets Treated</div>
-              </div>
-              <div className="text-center">
-                <div className="text-4xl font-bold mb-2">24/7</div>
-                <div className="text-cyan-100">Emergency Care</div>
               </div>
               <div className="text-center">
                 <div className="text-4xl font-bold mb-2">3</div>

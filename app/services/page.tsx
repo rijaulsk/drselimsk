@@ -145,7 +145,7 @@ const ServicesPage = () => {
           
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
-              { icon: Clock, title: "24/7 Emergency", subtitle: "Always Available" },
+              { icon: Clock, title: "Emergency Care", subtitle: "Available in Need" },
               { icon: Home, title: "Home Visits", subtitle: "Convenient Care" },
               { icon: Shield, title: "Expert Care", subtitle: "3+ Years Experience" },
               { icon: CheckCircle, title: "Affordable", subtitle: "Value for Money" }

@@ -9,8 +9,8 @@ const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
 
   const texts = [
-    "Compassionate Veterinary Care",
-    "24/7 Emergency Services",
+    "Compassionate Vet Care",
+    "Emergency Services",
     "Expert Pet Healthcare",
   ];
 
@@ -65,9 +65,9 @@ const Hero = () => {
                 </div>
                 <div>
                   <div className="font-semibold text-slate-900">
-                    24/7 Emergency
+                    Emergency
                   </div>
-                  <div className="text-sm text-slate-600">Always Available</div>
+                  <div className="text-sm text-slate-600">Support & Visits</div>
                 </div>
               </div>
               <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-shadow duration-200">
@@ -125,8 +125,8 @@ const Hero = () => {
                 <div className="text-sm text-slate-600">Locations</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600">24/7</div>
-                <div className="text-sm text-slate-600">Emergency Care</div>
+                <div className="text-3xl font-bold text-orange-600">200+</div>
+                <div className="text-sm text-slate-600">Successful Surgeries</div>
               </div>
             </div>
           </div>

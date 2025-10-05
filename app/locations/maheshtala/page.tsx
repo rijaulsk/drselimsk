@@ -370,8 +370,8 @@ const MaheshtalePage = () => {
               <div className="text-slate-300">Community Treatment Programs</div>
             </div>
             <div className="bg-slate-800 p-6 rounded-xl text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">24/7</div>
-              <div className="text-slate-300">Emergency Response</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">200+</div>
+              <div className="text-slate-300">Successful Surgeries</div>
             </div>
             <div className="bg-slate-800 p-6 rounded-xl text-center">
               <div className="text-3xl font-bold text-orange-400 mb-2">
@@ -396,7 +396,7 @@ const MaheshtalePage = () => {
                 What are your clinic hours at the Maheshtala location?
               </h3>
               <p className="text-slate-600">
-                Our Maheshtala clinic is open daily from 10:00 AM to 10:00 PM. Emergency services are available 24/7 for urgent pet care needs.
+                Our Maheshtala clinic is open daily from 10:00 AM to 10:00 PM. Emergency services are available for urgent pet care needs.
               </p>
             </div>
             
@@ -432,7 +432,7 @@ const MaheshtalePage = () => {
                 Do you offer emergency services for large animals?
               </h3>
               <p className="text-slate-600">
-                Yes, we provide 24/7 emergency response for both pets and large animals. Our team is equipped to handle farm animal emergencies throughout the South Kolkata rural belt.
+                Yes, we provide emergency response for both pets and large animals. Our team is equipped to handle farm animal emergencies throughout the South Kolkata rural belt.
               </p>
             </div>
             

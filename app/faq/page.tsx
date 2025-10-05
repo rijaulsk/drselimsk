@@ -50,7 +50,7 @@ const FAQPage = () => {
       category: "emergency",
       question: "What should I do in a pet emergency?",
       answer:
-        "Call our emergency number +91 6291630297 immediately. Dr. Selim is available 24/7 for genuine emergencies. Stay calm, move your pet to a safe area if possible, and be ready to describe the symptoms. We provide emergency home visits when transportation isn't safe.",
+        "Call our emergency number +91 6291630297 immediately. Dr. Selim is available for genuine emergencies. Stay calm, move your pet to a safe area if possible, and be ready to describe the symptoms. We provide emergency home visits when transportation isn't safe.",
     },
     {
       category: "services",
@@ -68,7 +68,7 @@ const FAQPage = () => {
       category: "appointments",
       question: "What are your clinic hours?",
       answer:
-        "Regular consultations are available daily from 10:00 AM to 10:00 PM at all our clinic locations. Emergency services are available 24/7. Home visits are scheduled by appointment and can be arranged during extended hours.",
+        "Regular consultations are available daily from 10:00 AM to 10:00 PM at all our clinic locations. Emergency services are available. Home visits are scheduled by appointment and can be arranged during extended hours.",
     },
     {
       category: "services",
@@ -283,9 +283,9 @@ const FAQPage = () => {
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm text-center">
                     <div className="text-2xl font-bold text-green-600 mb-2">
-                      24/7
+                      200+
                     </div>
-                    <div className="text-slate-600">Emergency Care</div>
+                    <div className="text-slate-600">Successful Surgeries</div>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm text-center">
                     <div className="text-2xl font-bold text-orange-600 mb-2">
@@ -333,7 +333,7 @@ const FAQPage = () => {
               <Clock className="h-4 w-4" />
               <span>Available for consultations daily 10:00 AM - 10:00 PM</span>
             </div>
-            <p>Emergency services available 24/7</p>
+            <p>Emergency services available</p>
           </div>
         </div>
       </section>

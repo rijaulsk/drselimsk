@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   title:
     "About Dr. Selim SK - Veterinary Doctor & Surgeon | Kolkata Pet Care Expert",
   description:
-    "Meet Dr. Selim SK, experienced veterinary surgeon with BVSc & AH degree from WBUAFS Kolkata. 3+ years of dedicated animal healthcare with 24/7 emergency services.",
+    "Meet Dr. Selim SK, experienced veterinary surgeon with BVSc & AH degree from WBUAFS Kolkata. 3+ years of dedicated animal healthcare with emergency services.",
   keywords:
     "Dr Selim SK veterinarian, BVSc veterinary doctor Kolkata, experienced pet doctor, animal surgeon Kolkata, veterinary qualifications",
 };
@@ -57,9 +57,9 @@ const AboutPage = () => {
     },
     {
       icon: Clock,
-      title: "24/7 Emergency Care",
+      title: "Emergency Care",
       description:
-        "Always available for critical situations and urgent medical needs",
+        "Available for critical situations and urgent medical needs",
       color: "bg-orange-100 text-orange-600",
     },
   ];
@@ -146,8 +146,8 @@ const AboutPage = () => {
                   <div className="text-sm text-slate-600">Pets Treated</div>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <div className="text-2xl font-bold text-orange-600">24/7</div>
-                  <div className="text-sm text-slate-600">Emergency Care</div>
+                  <div className="text-2xl font-bold text-orange-600">200+</div>
+                  <div className="text-sm text-slate-600">Successful Surgeries</div>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-sm">
                   <div className="text-2xl font-bold text-purple-600">3</div>
@@ -310,7 +310,7 @@ const AboutPage = () => {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Emergency Care Available 24/7",
+                title: "Emergency Care Available",
                 description:
                   "Always ready to help your pets in critical situations, day or night",
                 icon: Clock,

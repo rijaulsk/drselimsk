@@ -86,7 +86,7 @@ const Services = () => {
     },
     {
       icon: Clock,
-      title: "24/7 Emergency Care",
+      title: "Emergency Care",
       description: "Round-the-clock emergency services for critical situations",
       color: "bg-red-100 text-red-600"
     },

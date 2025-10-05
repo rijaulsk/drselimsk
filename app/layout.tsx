@@ -50,7 +50,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "VeterinaryCare",
               "name": "Dr. Selim SK - Veterinary Doctor & Surgeon",
-              "description": "Expert veterinary services with 24/7 emergency care",
+              "description": "Expert veterinary services with emergency care",
               "url": "https://drselimsk.com",
               "telephone": "+916291630297",
               "email": "mstgunahar@gmail.com",

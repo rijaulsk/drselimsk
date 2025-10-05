@@ -16,12 +16,12 @@ import {
 
 export const metadata: Metadata = {
   title: "Dr. Selim SK (VETERINARY DOCTOR & SURGEON) | Vet in Baranagar",
-  description: "Official page for Dr. Selim SK (VETERINARY DOCTOR & SURGEON) in Baranagar. Offering expert pet care, surgery, and 24/7 emergency services. Call +91 6291630297.",
+  description: "Official page for Dr. Selim SK (VETERINARY DOCTOR & SURGEON) in Baranagar. Offering expert pet care, surgery, and emergency services. Call +91 6291630297.",
   keywords:
     "Dr Selim SK veterinarian Baranagar, veterinary doctor Gopal Lal Tagore Road, pet doctor North Kolkata, animal hospital Baranagar 700036",
   openGraph: {
     title: "Dr. Selim SK (VETERINARY DOCTOR & SURGEON) | Vet in Baranagar",
-    description: "Official page for Dr. Selim SK (VETERINARY DOCTOR & SURGEON) in Baranagar. Expert pet care, surgery, and 24/7 emergency services.",
+    description: "Official page for Dr. Selim SK (VETERINARY DOCTOR & SURGEON) in Baranagar. Expert pet care, surgery, and emergency services.",
     url: "https://www.drselimsk.com/locations/baranagar",
     type: "website",
     locale: "en_IN",
@@ -61,7 +61,7 @@ const BaranagarPage = () => {
     {
       icon: Phone,
       title: "Emergency Care",
-      description: "24/7 emergency veterinary services available at our Baranagar clinic. Critical care when you need it most in North Kolkata.",
+      description: "emergency veterinary services available at our Baranagar clinic. Critical care when you need it most in North Kolkata.",
     },
     {
       icon: Home,
@@ -361,7 +361,7 @@ const BaranagarPage = () => {
                 What are your clinic hours at the Baranagar location?
               </h3>
               <p className="text-slate-600">
-                Our Baranagar clinic is open daily from 10:00 AM to 10:00 PM. We also provide 24/7 emergency services for urgent pet care needs.
+                Our Baranagar clinic is open daily from 10:00 AM to 10:00 PM. We also provide emergency services for urgent pet care needs.
               </p>
             </div>
             
@@ -376,7 +376,7 @@ const BaranagarPage = () => {
             
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <h3 className="text-lg font-bold text-slate-900 mb-3">
-                Where exactly is Dr. Selim SK's Baranagar clinic located?
+                Where exactly is Dr. Selim SK&apos;s Baranagar clinic located?
               </h3>
               <p className="text-slate-600">
                 Our clinic is located at {locationDetails.fullAddress}. You can find us using the Plus Code {locationDetails.plusCode} for precise navigation.
@@ -388,7 +388,7 @@ const BaranagarPage = () => {
                 Do you provide emergency services at this Baranagar location?
               </h3>
               <p className="text-slate-600">
-                Yes, we offer 24/7 emergency services at our Baranagar clinic. If your pet needs urgent care in North Kolkata, please call us immediately at <a href={`tel:${locationDetails.phoneNumber}`} className="text-orange-600 hover:text-orange-700 font-medium">{locationDetails.phoneNumber}</a>.
+                Yes, we offer emergency services at our Baranagar clinic. If your pet needs urgent care in North Kolkata, please call us immediately at <a href={`tel:${locationDetails.phoneNumber}`} className="text-orange-600 hover:text-orange-700 font-medium">{locationDetails.phoneNumber}</a>.
               </p>
             </div>
             
@@ -421,7 +421,7 @@ const BaranagarPage = () => {
           </h2>
           <p className="text-xl mb-8 text-blue-100">
             Professional veterinary care in North Kolkata with emergency
-            services available 24/7
+            services available
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -457,7 +457,7 @@ const BaranagarPage = () => {
             "@context": "https://schema.org",
             "@type": "VeterinaryCare",
             "name": locationDetails.businessName,
-            "description": "Professional veterinary care in Baranagar, North Kolkata with 24/7 emergency services",
+            "description": "Professional veterinary care in Baranagar, North Kolkata with emergency services",
             "url": locationDetails.websiteUrl,
             "telephone": locationDetails.phoneNumber,
             "email": "mstgunahar@gmail.com",
@@ -495,7 +495,7 @@ const BaranagarPage = () => {
               {
                 "@type": "PropertyValue",
                 "name": "Emergency Services",
-                "value": "Available 24/7"
+                "value": "Available in Need"
               },
               {
                 "@type": "PropertyValue",

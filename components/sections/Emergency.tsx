@@ -34,7 +34,7 @@ const Emergency = () => {
     {
       icon: Heart,
       title: "Surgical Emergencies",
-      description: "Immediate surgical interventions available 24/7",
+      description: "Immediate surgical interventions available",
       color: "bg-red-100 text-red-600"
     },
     {
@@ -61,7 +61,7 @@ const Emergency = () => {
               <AlertTriangle className="h-8 w-8 text-red-600" />
             </div>
             <h2 className="text-4xl font-bold text-slate-900 mb-4">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">24/7 Emergency Services</span>
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-600 to-orange-600">Emergency Services</span>
             </h2>
             <p className="text-xl text-slate-700 max-w-3xl mx-auto">
               Pet emergencies don&apos;t wait for business hours. Dr. Selim provides round-the-clock emergency services when you need them most.
@@ -82,10 +82,10 @@ const Emergency = () => {
                 >
                   +91 6291630297
                 </a>
-                <p className="text-red-100 mb-6">Available 24/7 for genuine emergencies</p>
+                <p className="text-red-100 mb-6">Available for genuine emergencies</p>
                 <div className="flex items-center justify-center space-x-2 text-red-100">
                   <Clock className="h-5 w-5" />
-                  <span>Always Available • Immediate Response</span>
+                  <span>Available in Need • Immediate Response</span>
                 </div>
               </div>
             </div>

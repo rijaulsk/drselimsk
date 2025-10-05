@@ -191,8 +191,8 @@ const Testimonials = () => {
                 </div>
                 <div className="hidden sm:block w-px h-16 bg-slate-700"></div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-orange-400">24/7</div>
-                  <div className="text-slate-400 text-sm">Emergency Care</div>
+                  <div className="text-3xl font-bold text-orange-400">200+</div>
+                  <div className="text-slate-400 text-sm">Successful Surgeries</div>
                 </div>
               </div>
             </div>

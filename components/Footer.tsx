@@ -20,11 +20,11 @@ const Footer = () => {
               </div>
             </div>
             <p className="text-slate-400 mb-6">
-              Providing compassionate veterinary care across Kolkata with 24/7 emergency services and expert treatment.
+              Providing compassionate veterinary care across Kolkata with emergency services and expert treatment.
             </p>
             <div className="flex items-center space-x-2 text-slate-400">
               <Clock className="h-4 w-4" />
-              <span className="text-sm">Emergency services available 24/7</span>
+              <span className="text-sm">Emergency services available</span>
             </div>
           </div>
 
@@ -87,7 +87,7 @@ const Footer = () => {
                   >
                     +91 6291630297
                   </a>
-                  <div className="text-sm text-slate-400">Available 24/7</div>
+                  <div className="text-sm text-slate-400">Available in Need</div>
                 </div>
               </div>
 
