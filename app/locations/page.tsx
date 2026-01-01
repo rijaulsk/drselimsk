@@ -13,8 +13,8 @@ import {
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Veterinary Clinics in Kolkata | 3 Locations | Dr. Selim SK',
-  description: 'Dr. Selim SK provides expert veterinary care across Kolkata with clinics in Baranagar (North), Parnasree & Maheshtala (South). Open daily. Call for appointments.',
+  title: 'Veterinary Clinics in Kolkata | 4 Locations | Dr. Selim SK',
+  description: 'Dr. Selim SK provides expert veterinary care across Kolkata with clinics in Baranagar (North), Parnasree, Maheshtala & New Alipore (South). Open daily. Call for appointments.',
   keywords: 'veterinary clinic locations Kolkata, pet doctor Baranagar, vet clinic Budge Budge, animal hospital Parnasree Palli, veterinary services near me',
 };
 
@@ -55,6 +55,18 @@ const LocationsPage = () => {
       area: "South Kolkata",
       landmarks: ["Near Parnasree Club", "Close to Kalimata Colony", "Behala Chowrasta nearby"],
       specialties: ["Diagnostic Services", "Pet Grooming", "Boarding Facilities"]
+    },
+    {
+      name: "New Alipore Clinic",
+      address: "Pet's Need, 10/1D, Diamond Harbour Rd, Alipore, Kolkata, West Bengal 700027",
+      shortAddress: "New Alipore, Kolkata 700027",
+      time: "Daily 10:00 AM - 10:00 PM",
+      slug: "new_alipore",
+      mapUrl: "https://maps.app.goo.gl/iZGX3h3VJqqn5sgKA",
+      color: "from-amber-500 via-orange-500 to-red-500",
+      area: "South Kolkata",
+      landmarks: ["Near Majherhat Railway Station", "Close to Taratala, D. H. Road", "Alipore Zoo nearby"],
+      specialties: ["Home Visits", "Large Animal Care", "Surgical Procedures"]
     }
   ];
 
@@ -91,7 +103,7 @@ const LocationsPage = () => {
               Your Trusted Local Vet: <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600">Serving North & South Kolkata</span>
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Finding expert and compassionate veterinary care in Kolkata has never been easier. With three strategically located clinics in Baranagar, Maheshtala, and Parnasree, Dr. Selim SK ensures your beloved pet is always close to professional help.
+              Finding expert and compassionate veterinary care in Kolkata has never been easier. With four strategically located clinics in Baranagar, Maheshtala, Parnasree, and New Alipore, Dr. Selim SK ensures your beloved pet is always close to professional help.
             </p>
           </div>
 
@@ -210,7 +222,7 @@ const LocationsPage = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Comprehensive Coverage Across Kolkata</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Our three strategically located clinics ensure that quality veterinary care is always within reach
+              Our four strategically located clinics ensure that quality veterinary care is always within reach
             </p>
           </div>
 
@@ -240,6 +252,13 @@ const LocationsPage = () => {
                       <div className="text-sm text-slate-600">Parnasree, Behala, Thakurpukur, Joka</div>
                     </div>
                   </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-amber-500 rounded-full"></div>
+                    <div>
+                      <div className="font-semibold text-slate-900">South Kolkata (New Alipore)</div>
+                      <div className="text-sm text-slate-600">New Alipore, Alipore, Taratala, Diamond Harbour Road</div>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="mt-8 p-4 bg-cyan-50 rounded-lg">
@@ -252,7 +271,7 @@ const LocationsPage = () => {
 
               <div className="bg-gradient-to-br from-slate-100 to-cyan-50 p-8 rounded-xl">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-2">3</div>
+                  <div className="text-4xl font-bold text-cyan-600 mb-2">4</div>
                   <div className="text-slate-700 mb-4">Strategic Locations</div>
                   
                   <div className="text-3xl font-bold text-green-600 mb-2">200+</div>
@@ -272,7 +291,7 @@ const LocationsPage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Emergency Services at All Locations</h2>
           <p className="text-xl mb-8 text-cyan-100">
-            Dr. Selim is available for emergency care at any of our three locations
+            Dr. Selim is available for emergency care at any of our four locations
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -294,7 +313,7 @@ const LocationsPage = () => {
           </div>
 
           <div className="mt-8 text-cyan-100">
-            <p>Available at Baranagar • Maheshtala • Parnasree</p>
+            <p>Available at Baranagar • Maheshtala • Parnasree • New Alipore</p>
           </div>
         </div>
       </section>

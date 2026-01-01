@@ -150,7 +150,7 @@ const AboutPage = () => {
                   <div className="text-sm text-slate-600">Successful Surgeries</div>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <div className="text-2xl font-bold text-purple-600">3</div>
+                  <div className="text-2xl font-bold text-purple-600">4</div>
                   <div className="text-sm text-slate-600">Clinic Locations</div>
                 </div>
               </div>
@@ -440,7 +440,7 @@ const AboutPage = () => {
 
           <div className="mt-8 text-cyan-100">
             <p>
-              Serving Baranagar, Budge Budge, and Parnasree Palli with home
+              Serving Baranagar, Maheshtala, Parnasree, and New Alipore with home
               visits available
             </p>
           </div>

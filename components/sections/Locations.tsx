@@ -52,6 +52,15 @@ const Locations = () => {
       slug: "parnasree",
       mapUrl: "https://maps.app.goo.gl/RFjVhRT4btQzLtwK7",
       color: "from-violet-500 via-purple-500 to-fuchsia-500"
+    },
+    {
+      name: "New Alipore Clinic",
+      address: "Pet's Need, 10/1D, Diamond Harbour Rd, Alipore, Kolkata, West Bengal 700027",
+      shortAddress: "New Alipore, Kolkata 700027",
+      time: "Daily 10:00 AM - 10:00 PM",
+      slug: "new_alipore",
+      mapUrl: "https://maps.app.goo.gl/iZGX3h3VJqqn5sgKA",
+      color: "from-amber-500 via-orange-500 to-red-500"
     }
   ];
 
@@ -170,8 +179,8 @@ const Locations = () => {
               </div>
               <div className="text-center">
                 <div className="bg-white p-4 rounded-lg shadow-sm mb-3">
-                  <div className="text-2xl font-bold text-cyan-600">Emergency Care</div>
-                  <div className="text-sm text-slate-600">Support & Visits</div>
+                  <div className="text-2xl font-bold text-amber-600">New Alipore</div>
+                  <div className="text-sm text-slate-600">South Kolkata</div>
                 </div>
               </div>
             </div>

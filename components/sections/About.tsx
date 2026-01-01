@@ -129,7 +129,7 @@ const About = () => {
                 <div className="text-cyan-100">Pets Treated</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">3</div>
+                <div className="text-4xl font-bold mb-2">4</div>
                 <div className="text-cyan-100">Clinic Locations</div>
               </div>
               <div className="text-center">

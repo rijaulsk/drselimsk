@@ -14,7 +14,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://drselimsk.com'),
   title: 'Dr. Selim SK - Veterinary Doctor & Surgeon | Kolkata Pet Care',
-  description: 'Expert veterinary services by Dr. Selim SK - 24/7 emergency care, home visits, vaccination, surgery. Trusted pet doctor serving Baranagar, Budge Budge, Parnasree Palli.',
+  description: 'Expert veterinary services by Dr. Selim SK - 24/7 emergency care, home visits, vaccination, surgery. Trusted pet doctor serving Baranagar, Maheshtala, Parnasree, and New Alipore.',
   keywords: 'veterinary doctor Kolkata, pet doctor near me, emergency vet service, animal surgeon Kolkata, pet vaccination Kolkata, veterinary clinic Baranagar',
   authors: [{ name: 'Dr. Selim SK' }],
   openGraph: {
@@ -77,6 +77,14 @@ export default function RootLayout({
                   "addressLocality": "Parnasree Palli, Kolkata",
                   "addressRegion": "West Bengal",
                   "postalCode": "700060", 
+                  "addressCountry": "IN"
+                },
+                {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Pet's Need, 10/1D, Diamond Harbour Rd, Alipore",
+                  "addressLocality": "New Alipore, Kolkata",
+                  "addressRegion": "West Bengal",
+                  "postalCode": "700027",
                   "addressCountry": "IN"
                 }
               ],
