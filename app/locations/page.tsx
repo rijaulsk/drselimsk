@@ -50,7 +50,7 @@ const LocationsPage = () => {
       shortAddress: "Parnasree Palli, Kolkata 700060",
       time: "Daily 10:00 AM - 10:00 PM",
       slug: "parnasree",
-      mapUrl: "from-violet-500 via-purple-500 to-fuchsia-500",
+      mapUrl: "https://maps.app.goo.gl/9J9cLDwoo255uo7Q6",
       color: "from-violet-500 via-purple-500 to-fuchsia-500",
       area: "South Kolkata",
       landmarks: ["Near Parnasree Club", "Close to Kalimata Colony", "Behala Chowrasta nearby"],
@@ -125,7 +125,8 @@ const LocationsPage = () => {
       {/* Locations Grid */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-3 gap-8">
+          <div className="max-w-6xl mx-auto">
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {locations.map((location, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-slate-100 overflow-hidden">
                 {/* Location Header */}
@@ -212,6 +213,7 @@ const LocationsPage = () => {
                 </div>
               </div>
             ))}
+            </div>
           </div>
         </div>
       </section>
