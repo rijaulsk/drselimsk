@@ -158,7 +158,7 @@ const NewtownPage = () => {
                   </a>
 
                   <Link
-                    href="/#booking"
+                    href="/booking"
                     className="bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-3 rounded-xl text-sm transition-colors inline-flex items-center space-x-2"
                   >
                     <span>Book Appointment at Newtown</span>
