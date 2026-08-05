@@ -51,7 +51,7 @@ export const bookingFormSchema = z.object({
   preferredTime: z
     .string()
     .min(1, { message: 'Please select a preferred time slot.' }),
-  clinicLocation: z.enum(['Baranagar', 'Maheshtala', 'Parnasree', 'New Alipore'], {
+  clinicLocation: z.enum(['Baranagar', 'Maheshtala', 'Parnasree', 'New Alipore', 'Newtown'], {
     required_error: 'Please select a clinic location.'
   }),
   serviceRequired: z.enum([

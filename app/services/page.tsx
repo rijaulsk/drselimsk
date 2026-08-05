@@ -315,7 +315,7 @@ const ServicesPage = () => {
           </div>
 
           <div className="mt-8 text-cyan-100">
-            <p>Available for home visits across Baranagar, Maheshtala, Parnasree, and New Alipore</p>
+            <p>Available for home visits across Baranagar, Maheshtala, Parnasree, New Alipore, and Newtown</p>
           </div>
         </div>
       </section>

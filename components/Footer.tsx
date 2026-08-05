@@ -114,9 +114,9 @@ const Footer = () => {
                 <div>
                   <div className="font-semibold text-white">Locations</div>
                   <div className="text-slate-400 text-sm">
-                    <div>Baranagar</div>
-                    <div>Budge Budge</div>
-                    <div>Parnasree Palli</div>
+                    <div>Baranagar • Maheshtala</div>
+                    <div>Parnasree • New Alipore</div>
+                    <div>Newtown (Action Area III)</div>
                   </div>
                 </div>
               </div>

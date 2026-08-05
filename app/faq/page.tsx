@@ -110,7 +110,7 @@ const FAQPage = () => {
       category: "appointments",
       question: "Which locations do you serve?",
       answer:
-        "We have four clinic locations: Baranagar (J9RF+MQ5, Gopal Lal Tagore Rd), Maheshtala (MORE, Nangi), Parnasree (58, Kalimata Colony Rd), and New Alipore (Pet's Need, 10/1D, Diamond Harbour Rd). Home visits are available across all areas of Kolkata.",
+        "We have five clinic locations: Baranagar (J9RF+MQ5, Gopal Lal Tagore Rd), Maheshtala (MORE, Nangi), Parnasree (58, Kalimata Colony Rd), New Alipore (Pet's Need, 10/1D, Diamond Harbour Rd), and Newtown (Action Area III). Home visits are available across all areas of Kolkata.",
     },
     {
       category: "services",
@@ -289,7 +289,7 @@ const FAQPage = () => {
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm text-center">
                     <div className="text-2xl font-bold text-orange-600 mb-2">
-                      4
+                      5
                     </div>
                     <div className="text-slate-600">Clinic Locations</div>
                   </div>

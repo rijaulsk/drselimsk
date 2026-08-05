@@ -6,7 +6,7 @@ import FloatingContacts from '@/components/FloatingContacts';
 
 export const metadata: Metadata = {
   title: 'Book Appointment | Dr. Selim SK Veterinary Care Kolkata',
-  description: 'Book online appointment for your dog, cat, or pet with Dr. Selim SK. Locations in Baranagar, Maheshtala, Parnasree, and New Alipore.',
+  description: 'Book online appointment for your dog, cat, or pet with Dr. Selim SK. Locations in Baranagar, Maheshtala, Parnasree, New Alipore, and Newtown.',
 };
 
 export default function BookingPage() {

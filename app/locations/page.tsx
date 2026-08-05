@@ -5,17 +5,14 @@ import {
   Clock, 
   Navigation, 
   Car,
-  Train,
-  Bus,
-  Star,
   CheckCircle
 } from 'lucide-react';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Veterinary Clinics in Kolkata | 4 Locations | Dr. Selim SK',
-  description: 'Dr. Selim SK provides expert veterinary care across Kolkata with clinics in Baranagar (North), Parnasree, Maheshtala & New Alipore (South). Open daily. Call for appointments.',
-  keywords: 'veterinary clinic locations Kolkata, pet doctor Baranagar, vet clinic Budge Budge, animal hospital Parnasree Palli, veterinary services near me',
+  title: 'Veterinary Clinics in Kolkata | 5 Locations | Dr. Selim SK',
+  description: 'Dr. Selim SK provides expert veterinary care across Kolkata with clinics in Baranagar, Maheshtala, Parnasree, New Alipore & Newtown. Open daily. Call for appointments.',
+  keywords: 'veterinary clinic locations Kolkata, pet doctor Baranagar, vet clinic Newtown, animal hospital Parnasree Palli, veterinary services near me',
 };
 
 const LocationsPage = () => {
@@ -67,6 +64,18 @@ const LocationsPage = () => {
       area: "South Kolkata",
       landmarks: ["Near Majherhat Railway Station", "Close to Taratala, D. H. Road", "Alipore Zoo nearby"],
       specialties: ["Home Visits", "Large Animal Care", "Surgical Procedures"]
+    },
+    {
+      name: "Newtown Clinic",
+      address: "Action Area III, Newtown, Kolkata, West Bengal 700160",
+      shortAddress: "Newtown, Kolkata 700160",
+      time: "Daily 10:00 AM - 10:00 PM",
+      slug: "newtown",
+      mapUrl: "https://maps.app.goo.gl/3ZCDUmmd3ZBC4Trc9",
+      color: "from-cyan-500 via-teal-500 to-blue-500",
+      area: "East Kolkata",
+      landmarks: ["Action Area III", "Close to Newtown Major Arterial Road", "Accessible from Salt Lake"],
+      specialties: ["General Health Checkup", "Vaccination", "Emergency Care"]
     }
   ];
 
@@ -100,10 +109,10 @@ const LocationsPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-slate-900 mb-6">
-              Your Trusted Local Vet: <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600">Serving North & South Kolkata</span>
+              Your Trusted Local Vet: <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 to-teal-600">Serving All Across Kolkata</span>
             </h1>
             <p className="text-xl text-slate-600 max-w-3xl mx-auto">
-              Finding expert and compassionate veterinary care in Kolkata has never been easier. With four strategically located clinics in Baranagar, Maheshtala, Parnasree, and New Alipore, Dr. Selim SK ensures your beloved pet is always close to professional help.
+              Finding expert and compassionate veterinary care in Kolkata has never been easier. With five strategically located clinics in Baranagar, Maheshtala, Parnasree, New Alipore, and Newtown, Dr. Selim SK ensures your beloved pet is always close to professional help.
             </p>
           </div>
 
@@ -126,78 +135,81 @@ const LocationsPage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-6xl mx-auto">
-  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {locations.map((location, index) => (
-              <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-slate-100 overflow-hidden">
-                {/* Location Header */}
-                <div className={`bg-gradient-to-r ${location.color} p-6 text-white`}>
-                  <div className="flex items-center space-x-3 mb-4">
-                    <div className="bg-white/20 p-2 rounded-lg">
-                      <MapPin className="h-6 w-6" />
-                    </div>
-                    <div>
-                      <h3 className="text-xl font-bold">{location.name}</h3>
-                      <p className="text-white/90">{location.area}</p>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Location Content */}
-                <div className="p-6">
-                  <div className="space-y-4 mb-6">
-                    <div className="flex items-start space-x-3">
-                      <MapPin className="h-5 w-5 text-slate-400 mt-0.5 flex-shrink-0" />
-                      <p className="text-slate-600 text-sm">{location.address}</p>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {locations.map((location, index) => (
+                <div key={index} className="bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-slate-100 overflow-hidden flex flex-col justify-between">
+                  <div>
+                    {/* Location Header */}
+                    <div className={`bg-gradient-to-r ${location.color} p-6 text-white`}>
+                      <div className="flex items-center space-x-3 mb-4">
+                        <div className="bg-white/20 p-2 rounded-lg">
+                          <MapPin className="h-6 w-6" />
+                        </div>
+                        <div>
+                          <h3 className="text-xl font-bold">{location.name}</h3>
+                          <p className="text-white/90">{location.area}</p>
+                        </div>
+                      </div>
                     </div>
 
-                    <div className="flex items-center space-x-3">
-                      <Clock className="h-5 w-5 text-slate-400" />
-                      <p className="text-slate-600 text-sm">{location.time}</p>
-                    </div>
+                    {/* Location Content */}
+                    <div className="p-6">
+                      <div className="space-y-4 mb-6">
+                        <div className="flex items-start space-x-3">
+                          <MapPin className="h-5 w-5 text-slate-400 mt-0.5 flex-shrink-0" />
+                          <p className="text-slate-600 text-sm">{location.address}</p>
+                        </div>
 
-                    <div className="flex items-center space-x-3">
-                      <Phone className="h-5 w-5 text-slate-400" />
-                      <a 
-                        href="tel:+916291630297"
-                        className="text-cyan-600 hover:text-cyan-700 text-sm font-medium"
-                      >
-                        +91 6291630297
-                      </a>
-                    </div>
-                  </div>
+                        <div className="flex items-center space-x-3">
+                          <Clock className="h-5 w-5 text-slate-400" />
+                          <p className="text-slate-600 text-sm">{location.time}</p>
+                        </div>
 
-                  {/* Landmarks */}
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-slate-900 mb-3">Nearby Landmarks</h4>
-                    <ul className="space-y-1">
-                      {location.landmarks.map((landmark, landmarkIndex) => (
-                        <li key={landmarkIndex} className="flex items-center space-x-2">
-                          <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div>
-                          <span className="text-slate-600 text-sm">{landmark}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
+                        <div className="flex items-center space-x-3">
+                          <Phone className="h-5 w-5 text-slate-400" />
+                          <a 
+                            href="tel:+916291630297"
+                            className="text-cyan-600 hover:text-cyan-700 text-sm font-medium"
+                          >
+                            +91 6291630297
+                          </a>
+                        </div>
+                      </div>
 
-                  {/* Specialties */}
-                  <div className="mb-6">
-                    <h4 className="font-semibold text-slate-900 mb-3">Key Services</h4>
-                    <div className="flex flex-wrap gap-2">
-                      {location.specialties.map((specialty, specialtyIndex) => (
-                        <span key={specialtyIndex} className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs">
-                          {specialty}
-                        </span>
-                      ))}
+                      {/* Landmarks */}
+                      <div className="mb-6">
+                        <h4 className="font-semibold text-slate-900 mb-3">Nearby Landmarks</h4>
+                        <ul className="space-y-1">
+                          {location.landmarks.map((landmark, landmarkIndex) => (
+                            <li key={landmarkIndex} className="flex items-center space-x-2">
+                              <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full"></div>
+                              <span className="text-slate-600 text-sm">{landmark}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+
+                      {/* Specialties */}
+                      <div className="mb-6">
+                        <h4 className="font-semibold text-slate-900 mb-3">Key Services</h4>
+                        <div className="flex flex-wrap gap-2">
+                          {location.specialties.map((specialty, specialtyIndex) => (
+                            <span key={specialtyIndex} className="bg-slate-100 text-slate-700 px-3 py-1 rounded-full text-xs">
+                              {specialty}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
                     </div>
                   </div>
 
                   {/* Action Buttons */}
-                  <div className="space-y-3">
+                  <div className="p-6 pt-0 space-y-3">
                     <a
                       href={location.mapUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center space-x-2"
+                      className="w-full bg-slate-100 hover:bg-slate-200 text-slate-700 px-4 py-2 rounded-lg font-medium transition-colors duration-200 flex items-center justify-center space-x-2 text-sm"
                     >
                       <Navigation className="h-4 w-4" />
                       <span>Get Directions</span>
@@ -205,14 +217,13 @@ const LocationsPage = () => {
 
                     <Link
                       href={`/locations/${location.slug}`}
-                      className={`w-full bg-gradient-to-r ${location.color} text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2`}
+                      className={`w-full bg-gradient-to-r ${location.color} text-white px-4 py-2 rounded-lg font-medium hover:opacity-90 transition-opacity duration-200 flex items-center justify-center space-x-2 text-sm`}
                     >
                       <span>View Details</span>
                     </Link>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
             </div>
           </div>
         </div>
@@ -224,7 +235,7 @@ const LocationsPage = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold text-slate-900 mb-4">Comprehensive Coverage Across Kolkata</h2>
             <p className="text-lg text-slate-600 max-w-3xl mx-auto">
-              Our four strategically located clinics ensure that quality veterinary care is always within reach
+              Our five strategically located clinics ensure that quality veterinary care is always within reach
             </p>
           </div>
 
@@ -261,6 +272,13 @@ const LocationsPage = () => {
                       <div className="text-sm text-slate-600">New Alipore, Alipore, Taratala, Diamond Harbour Road</div>
                     </div>
                   </div>
+                  <div className="flex items-center space-x-3">
+                    <div className="w-3 h-3 bg-cyan-500 rounded-full"></div>
+                    <div>
+                      <div className="font-semibold text-slate-900">East Kolkata (Newtown)</div>
+                      <div className="text-sm text-slate-600">Newtown Action Area I, II, III, Salt Lake, Rajarhat</div>
+                    </div>
+                  </div>
                 </div>
 
                 <div className="mt-8 p-4 bg-cyan-50 rounded-lg">
@@ -273,7 +291,7 @@ const LocationsPage = () => {
 
               <div className="bg-gradient-to-br from-slate-100 to-cyan-50 p-8 rounded-xl">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-cyan-600 mb-2">4</div>
+                  <div className="text-4xl font-bold text-cyan-600 mb-2">5</div>
                   <div className="text-slate-700 mb-4">Strategic Locations</div>
                   
                   <div className="text-3xl font-bold text-green-600 mb-2">200+</div>
@@ -293,7 +311,7 @@ const LocationsPage = () => {
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-4">Emergency Services at All Locations</h2>
           <p className="text-xl mb-8 text-cyan-100">
-            Dr. Selim is available for emergency care at any of our four locations
+            Dr. Selim is available for emergency care at any of our five locations
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -315,7 +333,7 @@ const LocationsPage = () => {
           </div>
 
           <div className="mt-8 text-cyan-100">
-            <p>Available at Baranagar • Maheshtala • Parnasree • New Alipore</p>
+            <p>Available at Baranagar • Maheshtala • Parnasree • New Alipore • Newtown</p>
           </div>
         </div>
       </section>

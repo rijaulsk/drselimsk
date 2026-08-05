@@ -254,34 +254,46 @@ const EmergencyPage = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-slate-900 text-center mb-16">Emergency Coverage Areas</h2>
           
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
             {[
               {
                 name: "Baranagar",
                 address: "J9RF+MQ5, Gopal Lal Tagore Rd",
-                responseTime: "15-20 minutes",
+                responseTime: "15-20 mins",
                 color: "from-indigo-500 via-blue-500 to-cyan-500"
               },
               {
                 name: "Maheshtala", 
                 address: "MORE, Nangi, Budge Budge",
-                responseTime: "15-25 minutes",
+                responseTime: "15-25 mins",
                 color: "from-emerald-500 via-teal-500 to-green-500"
               },
               {
                 name: "Parnasree",
                 address: "58, Kalimata Colony Rd",
-                responseTime: "10-20 minutes", 
+                responseTime: "10-20 mins", 
                 color: "from-violet-500 via-purple-500 to-fuchsia-500"
+              },
+              {
+                name: "New Alipore",
+                address: "10/1D, Diamond Harbour Rd",
+                responseTime: "10-20 mins",
+                color: "from-amber-500 via-orange-500 to-red-500"
+              },
+              {
+                name: "Newtown",
+                address: "Action Area III, Newtown",
+                responseTime: "15-25 mins",
+                color: "from-cyan-500 via-teal-500 to-blue-500"
               }
             ].map((location, index) => (
               <div key={index} className="text-center">
-                <div className={`bg-gradient-to-r ${location.color} p-6 rounded-2xl text-white mb-4`}>
-                  <h3 className="text-xl font-bold mb-2">{location.name}</h3>
-                  <p className="text-sm opacity-90 mb-4">{location.address}</p>
-                  <div className="bg-white/20 p-3 rounded-lg">
-                    <div className="text-sm opacity-90">Response Time</div>
-                    <div className="text-lg font-bold">{location.responseTime}</div>
+                <div className={`bg-gradient-to-r ${location.color} p-5 rounded-2xl text-white mb-4 shadow-md`}>
+                  <h3 className="text-lg font-bold mb-1">{location.name}</h3>
+                  <p className="text-xs opacity-90 mb-3 line-clamp-2">{location.address}</p>
+                  <div className="bg-white/20 p-2.5 rounded-lg">
+                    <div className="text-xs opacity-90">Response Time</div>
+                    <div className="text-sm font-bold">{location.responseTime}</div>
                   </div>
                 </div>
               </div>

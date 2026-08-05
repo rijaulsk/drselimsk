@@ -61,6 +61,15 @@ const Locations = () => {
       slug: "new_alipore",
       mapUrl: "https://maps.app.goo.gl/iZGX3h3VJqqn5sgKA",
       color: "from-amber-500 via-orange-500 to-red-500"
+    },
+    {
+      name: "Newtown Clinic",
+      address: "Action Area III, Newtown, Kolkata, West Bengal 700160",
+      shortAddress: "Action Area III, Newtown 700160",
+      time: "Daily 10:00 AM - 10:00 PM",
+      slug: "newtown",
+      mapUrl: "https://maps.app.goo.gl/3ZCDUmmd3ZBC4Trc9",
+      color: "from-cyan-500 via-teal-500 to-blue-500"
     }
   ];
 
@@ -79,14 +88,14 @@ const Locations = () => {
           </div>
 
           {/* Locations Grid */}
-          <div className="grid lg:grid-cols-3 gap-8 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             {locations.map((location, index) => (
               <div
                 key={index}
                 className={`bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 border border-slate-100 overflow-hidden ${
                   isVisible ? 'animate-fade-in-up' : ''
                 }`}
-                style={{ animationDelay: `${index * 200}ms` }}
+                style={{ animationDelay: `${index * 150}ms` }}
               >
                 {/* Location Header */}
                 <div className={`bg-gradient-to-r ${location.color} p-6 text-white`}>
@@ -158,29 +167,35 @@ const Locations = () => {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-4">
               <div className="text-center">
                 <div className="bg-white p-4 rounded-lg shadow-sm mb-3">
-                  <div className="text-2xl font-bold text-blue-600">Baranagar</div>
+                  <div className="text-xl font-bold text-blue-600">Baranagar</div>
                   <div className="text-sm text-slate-600">North Kolkata</div>
                 </div>
               </div>
               <div className="text-center">
                 <div className="bg-white p-4 rounded-lg shadow-sm mb-3">
-                  <div className="text-2xl font-bold text-green-600">Maheshtala</div>
+                  <div className="text-xl font-bold text-green-600">Maheshtala</div>
                   <div className="text-sm text-slate-600">South Kolkata</div>
                 </div>
               </div>
               <div className="text-center">
                 <div className="bg-white p-4 rounded-lg shadow-sm mb-3">
-                  <div className="text-2xl font-bold text-purple-600">Parnasree</div>
+                  <div className="text-xl font-bold text-purple-600">Parnasree</div>
                   <div className="text-sm text-slate-600">South Kolkata</div>
                 </div>
               </div>
               <div className="text-center">
                 <div className="bg-white p-4 rounded-lg shadow-sm mb-3">
-                  <div className="text-2xl font-bold text-amber-600">New Alipore</div>
+                  <div className="text-xl font-bold text-amber-600">New Alipore</div>
                   <div className="text-sm text-slate-600">South Kolkata</div>
+                </div>
+              </div>
+              <div className="text-center">
+                <div className="bg-white p-4 rounded-lg shadow-sm mb-3">
+                  <div className="text-xl font-bold text-cyan-600">Newtown</div>
+                  <div className="text-sm text-slate-600">East Kolkata</div>
                 </div>
               </div>
             </div>

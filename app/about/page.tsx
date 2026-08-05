@@ -440,7 +440,7 @@ const AboutPage = () => {
 
           <div className="mt-8 text-cyan-100">
             <p>
-              Serving Baranagar, Maheshtala, Parnasree, and New Alipore with home
+              Serving Baranagar, Maheshtala, Parnasree, New Alipore, and Newtown with home
               visits available
             </p>
           </div>

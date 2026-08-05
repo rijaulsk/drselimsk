@@ -14,8 +14,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL('https://drselimsk.com'),
   title: 'Dr. Selim SK - Veterinary Doctor & Surgeon | Kolkata Pet Care',
-  description: 'Expert veterinary services by Dr. Selim SK - 24/7 emergency care, home visits, vaccination, surgery. Trusted pet doctor serving Baranagar, Maheshtala, Parnasree, and New Alipore.',
-  keywords: 'veterinary doctor Kolkata, pet doctor near me, emergency vet service, animal surgeon Kolkata, pet vaccination Kolkata, veterinary clinic Baranagar',
+  description: 'Expert veterinary services by Dr. Selim SK - 24/7 emergency care, home visits, vaccination, surgery. Trusted pet doctor serving Baranagar, Maheshtala, Parnasree, New Alipore, and Newtown.',
+  keywords: 'veterinary doctor Kolkata, pet doctor near me, emergency vet service, animal surgeon Kolkata, pet vaccination Kolkata, veterinary clinic Baranagar, vet clinic Newtown',
   authors: [{ name: 'Dr. Selim SK' }],
   openGraph: {
     title: 'Dr. Selim SK - Veterinary Doctor & Surgeon',
@@ -50,7 +50,7 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "VeterinaryCare",
               "name": "Dr. Selim SK - Veterinary Doctor & Surgeon",
-              "description": "Expert veterinary services with emergency care",
+              "description": "Expert veterinary services with emergency care across 5 Kolkata locations",
               "url": "https://drselimsk.com",
               "telephone": "+916291630297",
               "email": "mstgunahar@gmail.com",
@@ -86,9 +86,17 @@ export default function RootLayout({
                   "addressRegion": "West Bengal",
                   "postalCode": "700027",
                   "addressCountry": "IN"
+                },
+                {
+                  "@type": "PostalAddress",
+                  "streetAddress": "Action Area III",
+                  "addressLocality": "Newtown, Kolkata",
+                  "addressRegion": "West Bengal",
+                  "postalCode": "700160",
+                  "addressCountry": "IN"
                 }
               ],
-              "openingHours": "Mo-Su 09:00-20:00",
+              "openingHours": "Mo-Su 10:00-22:00",
               "priceRange": "₹₹",
               "paymentAccepted": "Cash, UPI",
               "emergencyService": true

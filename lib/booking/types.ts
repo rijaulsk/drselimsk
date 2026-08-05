@@ -1,6 +1,6 @@
 export type AnimalType = 'Dog' | 'Cat' | 'Bird' | 'Rabbit' | 'Other';
 
-export type ClinicLocation = 'Baranagar' | 'Maheshtala' | 'Parnasree' | 'New Alipore';
+export type ClinicLocation = 'Baranagar' | 'Maheshtala' | 'Parnasree' | 'New Alipore' | 'Newtown';
 
 export type ServiceRequired = 
   | 'General Checkup'
@@ -102,6 +102,16 @@ export const CLINIC_LOCATIONS: LocationDetail[] = [
     phone: '+91 6291630297',
     mapUrl: 'https://maps.app.goo.gl/iZGX3h3VJqqn5sgKA',
     badgeColor: 'from-amber-600 to-orange-600'
+  },
+  {
+    id: 'Newtown',
+    name: 'Newtown Clinic',
+    address: 'Action Area III, Newtown, Kolkata, West Bengal 700160',
+    shortAddress: 'Action Area III, Newtown',
+    timing: 'Daily 10:00 AM - 10:00 PM',
+    phone: '+91 6291630297',
+    mapUrl: 'https://maps.app.goo.gl/3ZCDUmmd3ZBC4Trc9',
+    badgeColor: 'from-cyan-600 to-teal-600'
   }
 ];
 

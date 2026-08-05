@@ -87,7 +87,7 @@ export const BookingSection: React.FC = () => {
                   <span>Clinic Locations & Hours</span>
                 </h3>
                 <span className="text-xs text-emerald-700 font-semibold bg-emerald-50 px-2 py-0.5 rounded-full">
-                  4 Clinics
+                  {CLINIC_LOCATIONS.length} Clinics
                 </span>
               </div>
 
