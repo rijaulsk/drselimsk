@@ -23,8 +23,9 @@ const Navigation = () => {
     { name: 'Home', href: '/' },
     { name: 'Services', href: '/services' },
     { name: 'About', href: '/about' },
-    { name: 'Emergency', href: '/emergency' },
     { name: 'Locations', href: '/locations' },
+    { name: 'Book Appointment', href: '/#booking' },
+    { name: 'Emergency', href: '/emergency' },
     { name: 'FAQ', href: '/faq' },
   ];
 

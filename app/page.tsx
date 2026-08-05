@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Hero from '@/components/sections/Hero';
 import About from '@/components/sections/About';
 import Services from '@/components/sections/Services';
+import { BookingSection } from '@/components/sections/BookingSection';
 import Testimonials from '@/components/sections/Testimonials';
 import Locations from '@/components/sections/Locations';
 import Emergency from '@/components/sections/Emergency';
@@ -21,6 +22,7 @@ export default function Home() {
       <Hero />
       <About />
       <Services />
+      <BookingSection />
       <Testimonials />
       <Locations />
       <Emergency />

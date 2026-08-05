@@ -33,6 +33,11 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-6">Quick Links</h3>
             <ul className="space-y-3">
               <li>
+                <Link href="/#booking" className="text-emerald-400 font-semibold hover:text-emerald-300 transition-colors duration-200 flex items-center space-x-1">
+                  <span>Book Appointment</span>
+                </Link>
+              </li>
+              <li>
                 <Link href="/about" className="text-slate-400 hover:text-white transition-colors duration-200">
                   About Dr. Selim
                 </Link>
