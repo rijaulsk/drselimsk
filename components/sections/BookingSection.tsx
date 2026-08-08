@@ -163,7 +163,7 @@ export const BookingSection: React.FC = () => {
               <div className="space-y-2 text-xs sm:text-sm text-slate-700 pt-2">
                 <div className="flex items-center space-x-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
-                  <span><strong>Dr. Selim SK</strong> (B.V.Sc & A.H., M.V.Sc Veterinary Surgeon)</span>
+                  <span><strong>Dr. Selim SK</strong> (B.V.Sc & A.H. Veterinary Surgeon)</span>
                 </div>
                 <div className="flex items-center space-x-2">
                   <CheckCircle2 className="w-4 h-4 text-emerald-600 flex-shrink-0" />
