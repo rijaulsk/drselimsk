@@ -370,7 +370,7 @@ const MaheshtalePage = () => {
               <div className="text-slate-300">Community Treatment Programs</div>
             </div>
             <div className="bg-slate-800 p-6 rounded-xl text-center">
-              <div className="text-3xl font-bold text-blue-400 mb-2">200+</div>
+              <div className="text-3xl font-bold text-blue-400 mb-2">10000+</div>
               <div className="text-slate-300">Successful Surgeries</div>
             </div>
             <div className="bg-slate-800 p-6 rounded-xl text-center">

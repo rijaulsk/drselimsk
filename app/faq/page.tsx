@@ -283,7 +283,7 @@ const FAQPage = () => {
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm text-center">
                     <div className="text-2xl font-bold text-green-600 mb-2">
-                      200+
+                      10000+
                     </div>
                     <div className="text-slate-600">Successful Surgeries</div>
                   </div>

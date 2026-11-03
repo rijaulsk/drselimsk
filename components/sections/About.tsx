@@ -133,7 +133,7 @@ const About = () => {
                 <div className="text-cyan-100">Clinic Locations</div>
               </div>
               <div className="text-center">
-                <div className="text-4xl font-bold mb-2">200+</div>
+                <div className="text-4xl font-bold mb-2">10000+</div>
                 <div className="text-cyan-100">Successful Surgeries</div>
               </div>
             </div>

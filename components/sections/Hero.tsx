@@ -125,7 +125,7 @@ const Hero = () => {
                 <div className="text-sm text-slate-600">Locations</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-orange-600">200+</div>
+                <div className="text-3xl font-bold text-orange-600">10000+</div>
                 <div className="text-sm text-slate-600">Successful Surgeries</div>
               </div>
             </div>

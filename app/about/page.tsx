@@ -146,7 +146,7 @@ const AboutPage = () => {
                   <div className="text-sm text-slate-600">Pets Treated</div>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-sm">
-                  <div className="text-2xl font-bold text-orange-600">200+</div>
+                  <div className="text-2xl font-bold text-orange-600">10000+</div>
                   <div className="text-sm text-slate-600">Successful Surgeries</div>
                 </div>
                 <div className="bg-white p-4 rounded-lg shadow-sm">

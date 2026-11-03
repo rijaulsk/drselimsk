@@ -150,7 +150,7 @@ export const BookingSection: React.FC = () => {
                 </div>
 
                 <div className="bg-teal-50/70 p-3 rounded-xl border border-teal-100">
-                  <div className="text-xl sm:text-2xl font-black text-teal-700">200+</div>
+                  <div className="text-xl sm:text-2xl font-black text-teal-700">10000+</div>
                   <div className="text-[11px] font-medium text-teal-900 mt-0.5">Surgeries</div>
                 </div>
 

@@ -294,7 +294,7 @@ const LocationsPage = () => {
                   <div className="text-4xl font-bold text-cyan-600 mb-2">5</div>
                   <div className="text-slate-700 mb-4">Strategic Locations</div>
                   
-                  <div className="text-3xl font-bold text-green-600 mb-2">200+</div>
+                  <div className="text-3xl font-bold text-green-600 mb-2">10000+</div>
                   <div className="text-slate-700 mb-4">Successful Surgeries</div>
                   
                   <div className="text-3xl font-bold text-orange-600 mb-2">100%</div>
